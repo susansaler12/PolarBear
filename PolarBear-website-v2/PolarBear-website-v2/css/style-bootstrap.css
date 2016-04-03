@@ -1,0 +1,191 @@
+/*-----------------------------------------*/
+/*    COMMON PROPERTIES - DO NOT TOUCH     */
+/*-----------------------------------------*/
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    margin:0;
+    padding:0;
+}
+.container, .container-fluid {
+	padding: 0;
+}
+.hidden {
+    left: -10000px;
+    line-height:0;
+    position: absolute;
+}
+html {
+    box-sizing: border-box;
+    /* height: 132px; */
+    position: relative;
+}
+img {
+    width: 100%;
+ }
+ 
+/*-------------------- header -----------------------*/
+#header {
+    padding-bottom: 1em;
+}
+#header #logo{
+    width: 73px;
+}
+#header .navbar-brand {
+	height: auto;
+}
+/*------------------ Navigation ---------------------*/
+#mainNav .nav {
+	position: relative;
+	top: 2em;
+}
+#mainNav .icon-bar{
+    color: black;
+}
+#mainNav .navbar-default{
+    background-color: white;
+    vertical-align: top;
+    border: none;
+}
+#mainNav .navbar-nav > li > a {
+	color: cornflowerblue;
+    font-family: 'Khand', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 15px;
+	text-align: center;
+	border-bottom: 1px solid #b6edff;
+	background-color: white;
+	z-index: 200;
+}
+#mainNav .nav > li > a:focus,
+#mainNav .nav > li > a:hover {
+    color:darkblue;
+    background-color: lightblue;
+}
+#mainNav .navbar-toggle .icon-bar {
+	background-color: cornflowerblue;
+}
+#mainNav .navbar-collapse.in {
+    overflow-y: visible;
+	width: 100%;
+}
+/*------------ search bar -------------*/
+
+/* search bar */
+#main.homepage .navbar-form .input-group > .form-control {
+    width: 93%;
+	border-radius: 0;
+}
+/* search bar button position */
+#main.homepage .input-group-btn{	  
+	position: absolute;
+	right: 0;
+}
+/* search bar button coloring */
+#main.homepage .btn.btn-default {
+    background-color: #11437F;
+	color: white;
+	border-radius: 0;
+}
+/* #main.homepage #search {
+    padding: 0 1em;
+    text-align: center;
+}
+#main.homepage #search .search_bar {
+    font-family: 'Khand', sans-serif;
+    font-size: 20px;
+    padding: 0.4rem;
+    width: 80%;
+}
+#main.homepage #search .search_btn {
+    color: white;
+    background-color: #11437F;
+    border: none;
+    font-family: 'Khand', sans-serif;
+    font-size: 20px;
+    padding: 0.5rem;
+}
+#main.homepage #search .search_btn:hover{
+    background-color: lightskyblue;
+    color: #325075;
+    cursor: pointer;
+} */
+/*-----------------------FOOTER-----------------------*/
+#footer ul{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+#footer .panel-body li h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+#footer .panel-body li {
+    padding-bottom: 4px;
+}
+#footer .panel-body li a:hover{
+   text-decoration: none;
+    color: cadetblue;
+}
+#footer #copyright{
+    text-align: center;
+    background-color: lightsteelblue;
+	font-size: 11px;
+    padding: 4px 0;
+}
+#footer .fa-3x {
+    color: cadetblue;
+    font-size: 3em;
+    margin: 4rem 2.5rem 0;
+}
+#footer .fa-3x:hover{
+    color:lightskyblue;
+    cursor: pointer;
+}
+#footer .icons{
+    text-align: center;
+}
+
+#footer .icons p{
+    font-family: 'Khand', sans-serif;
+    font-size: 1.2rem;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media (max-width:767px) {
+	
+	#header #logo{
+		width: 50px;
+	}
+	/* force mainNav and hambuger to top */
+	#mainNav{
+		position: absolute;
+		top: 10px;
+		padding: 0;
+	}
+	#mainNav .navbar-collapse {
+		padding: 0;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
+	/* column of 5 */
+	.col-sm-20{
+		width: 20%;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:@screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:@screen-lg-min) {
+	
+}
