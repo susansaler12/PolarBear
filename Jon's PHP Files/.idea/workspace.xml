@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3518a2bd-fe93-48f3-85ae-2f5ef498a33e" name="Default" comment="" />
+    <ignored path="PHP_DBLab.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings">
+    <phpPath>$PROJECT_DIR$/../../bin/php/php7.0.0/bin/php</phpPath>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="PHP_DBLab" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="events_DB.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="45" />
+              <folding>
+                <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+                <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+                <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+                <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+                <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+                <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+                <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+                <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+                <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+                <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+                <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar_build.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/calendar_build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.42307693">
+              <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/calendar_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event_details.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/event_details.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/calendar_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DB_connection.php" />
+        <option value="$PROJECT_DIR$/event_creation_page.php" />
+        <option value="$PROJECT_DIR$/valLibrary.php" />
+        <option value="$PROJECT_DIR$/events.php" />
+        <option value="$PROJECT_DIR$/eventStyle.css" />
+        <option value="$PROJECT_DIR$/update_event.php" />
+        <option value="$PROJECT_DIR$/delete_confirm.js" />
+        <option value="$PROJECT_DIR$/valEvent.js" />
+        <option value="$PROJECT_DIR$/event_details.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/delete_event.php" />
+        <option value="$PROJECT_DIR$/event_invite.php" />
+        <option value="$PROJECT_DIR$/invites.php" />
+        <option value="$PROJECT_DIR$/process_pages/update_event.php" />
+        <option value="$PROJECT_DIR$/process_pages/delete_event.php" />
+        <option value="$PROJECT_DIR$/Models/events_class.php" />
+        <option value="$PROJECT_DIR$/Models/invites_DB.php" />
+        <option value="$PROJECT_DIR$/Views/event_invite.php" />
+        <option value="$PROJECT_DIR$/process_pages/add_invite.php" />
+        <option value="$PROJECT_DIR$/Views/view_invites.php" />
+        <option value="$PROJECT_DIR$/Views/index.php" />
+        <option value="$PROJECT_DIR$/Models/calendar.php" />
+        <option value="$PROJECT_DIR$/Models/Calendar.php" />
+        <option value="$PROJECT_DIR$/Models/events_DB.php" />
+        <option value="$PROJECT_DIR$/styles/calendar_style.css" />
+        <option value="$PROJECT_DIR$/Views/calendar_view.php" />
+        <option value="$PROJECT_DIR$/Views/event_details.php" />
+        <option value="$PROJECT_DIR$/scripts/calendar_build.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="process_pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP_DBLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dependencies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PDOclass" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dependencies" />
+      <recent name="$PROJECT_DIR$/scripts/fullcalendar-2.6.1" />
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$/Views" />
+      <recent name="$PROJECT_DIR$/process_pages" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3518a2bd-fe93-48f3-85ae-2f5ef498a33e" name="Default" comment="" />
+      <created>1457628114060</created>
+      <option name="number" value="Default" />
+      <updated>1457628114060</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="773" extended-state="1" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15851064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Views/event_details.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/event_invite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+            <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+            <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/event_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/update_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/valEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="169" selection-start-line="65" selection-start-column="169" selection-end-line="65" selection-end-column="169" />
+          <folding>
+            <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+            <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+            <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/event_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/delete_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/update_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/valEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="169" selection-start-line="65" selection-start-column="169" selection-end-line="65" selection-end-column="169" />
+          <folding>
+            <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+            <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+            <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/delete_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/update_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/valEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="169" selection-start-line="65" selection-start-column="169" selection-end-line="65" selection-end-column="169" />
+          <folding>
+            <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+            <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+            <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/delete_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/DB_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
+          <folding>
+            <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+            <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+            <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="177" selection-start-line="15" selection-start-column="177" selection-end-line="15" selection-end-column="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/delete_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/event_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/update_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/DB_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/delete_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/event_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/update_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/eventStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
+          <folding>
+            <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+            <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+            <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/DB_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_confirm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13719513">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/valEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2972561">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/eventStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7109005">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/update_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90047395">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/delete_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.434783">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependencies/fullcalendar-2.6.1/fullcalendar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependencies/fullcalendar-2.6.1/fullcalendar.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35381114">
+          <caret line="4" column="5617" selection-start-line="4" selection-start-column="5609" selection-end-line="4" selection-end-column="5617" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/event_invite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9565217">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/invites_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/calendar_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/event_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process_pages/add_invite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20673813">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/view_invites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.782609">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/DB_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3043479">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/events_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="45" />
+          <folding>
+            <marker date="1460066360000" expanded="true" signature="115:135" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="355:494" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="395:493" placeholder="SELECT e.eve... events" />
+            <marker date="1460066360000" expanded="true" signature="515:604" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="1085:1312" placeholder="INSERT INTO events... " />
+            <marker date="1460066360000" expanded="true" signature="2077:2113" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2077:2122" placeholder="DELETE FROM " />
+            <marker date="1460066360000" expanded="true" signature="2591:2629" placeholder="SELECT * FRO... events" />
+            <marker date="1460066360000" expanded="true" signature="3021:3056" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3085" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3116" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3117" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3134" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3152" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3185" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3215" placeholder="UPDATE TABLE... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3216" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3021:3225" placeholder="UPDATE event... " />
+            <marker date="1460066360000" expanded="true" signature="3027:3034" placeholder="INSERT INTO events... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/calendar_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/calendar_build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42307693">
+          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
