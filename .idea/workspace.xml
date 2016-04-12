@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b8dd3d9-17ca-4a77-be53-48767ad221d1" name="Default" comment="" />
+    <ignored path="PBG-Repo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="PBG-Repo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GordFeatures.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GordFeatures/GordFeatures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8962433">
+              <caret line="266" column="1" selection-start-line="266" selection-start-column="1" selection-end-line="266" selection-end-column="1" />
+              <folding>
+                <marker date="1460476713035" expanded="true" signature="214:317" placeholder="select * fro... friends" />
+                <marker date="1460476713035" expanded="true" signature="1195:1320" placeholder="select conca... user_profiles" />
+                <marker date="1460476713035" expanded="true" signature="1945:2133" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="1973:2092" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="2120:2133" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="2221:2506" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="2352:2480" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="2725:2787" placeholder="select f_nam... user_profiles" />
+                <marker date="1460476713035" expanded="true" signature="3264:3425" placeholder="select event... " />
+                <marker date="1460476713035" expanded="true" signature="4387:4568" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="4415:4527" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="4555:4568" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="4658:4783" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="5014:5139" placeholder="select name,... products" />
+                <marker date="1460476713035" expanded="true" signature="5078:5138" placeholder="select produ... wishlist" />
+                <marker date="1460476713035" expanded="true" signature="6074:6307" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="6102:6266" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="6294:6307" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="6398:6564" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="6822:6894" placeholder="select avg(r... reviews" />
+                <marker date="1460476713035" expanded="true" signature="7477:7550" placeholder="select * fro... reviews" />
+                <marker date="1460476713035" expanded="true" signature="8078:8148" placeholder="select * fro... reviews" />
+                <marker date="1460476713035" expanded="true" signature="8903:9164" placeholder="..." />
+                <marker date="1460476713035" expanded="true" signature="9389:9471" placeholder="insert into reviews... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GordFeatures/database_error.php" />
+        <option value="$PROJECT_DIR$/GordFeatures/GordFeatures.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP from XAMPP" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PBG-Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PBG-Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PBG-Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PBG-Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PBG-Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GordFeatures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b8dd3d9-17ca-4a77-be53-48767ad221d1" name="Default" comment="" />
+      <created>1460476244788</created>
+      <option name="number" value="Default" />
+      <updated>1460476244788</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16111952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/GordFeatures/GordFeatures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460476713035" expanded="true" signature="214:317" placeholder="select * fro... friends" />
+            <marker date="1460476713035" expanded="true" signature="1195:1320" placeholder="select conca... user_profiles" />
+            <marker date="1460476713035" expanded="true" signature="1945:2133" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="1973:2092" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2120:2133" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2221:2506" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2352:2480" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2725:2787" placeholder="select f_nam... user_profiles" />
+            <marker date="1460476713035" expanded="true" signature="3264:3425" placeholder="select event... " />
+            <marker date="1460476713035" expanded="true" signature="4387:4568" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="4415:4527" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="4555:4568" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="4658:4783" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="5014:5139" placeholder="select name,... products" />
+            <marker date="1460476713035" expanded="true" signature="5078:5138" placeholder="select produ... wishlist" />
+            <marker date="1460476713035" expanded="true" signature="6074:6307" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6102:6266" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6294:6307" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6398:6564" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6822:6894" placeholder="select avg(r... reviews" />
+            <marker date="1460476713035" expanded="true" signature="7477:7550" placeholder="select * fro... reviews" />
+            <marker date="1460476713035" expanded="true" signature="8078:8148" placeholder="select * fro... reviews" />
+            <marker date="1460476713035" expanded="true" signature="8903:9164" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="9389:9471" placeholder="insert into reviews... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GordFeatures/database_error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22580644">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GordFeatures/searchForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GordFeatures/postReviewForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GordFeatures/GordFeatures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8962433">
+          <caret line="266" column="1" selection-start-line="266" selection-start-column="1" selection-end-line="266" selection-end-column="1" />
+          <folding>
+            <marker date="1460476713035" expanded="true" signature="214:317" placeholder="select * fro... friends" />
+            <marker date="1460476713035" expanded="true" signature="1195:1320" placeholder="select conca... user_profiles" />
+            <marker date="1460476713035" expanded="true" signature="1945:2133" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="1973:2092" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2120:2133" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2221:2506" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2352:2480" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="2725:2787" placeholder="select f_nam... user_profiles" />
+            <marker date="1460476713035" expanded="true" signature="3264:3425" placeholder="select event... " />
+            <marker date="1460476713035" expanded="true" signature="4387:4568" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="4415:4527" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="4555:4568" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="4658:4783" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="5014:5139" placeholder="select name,... products" />
+            <marker date="1460476713035" expanded="true" signature="5078:5138" placeholder="select produ... wishlist" />
+            <marker date="1460476713035" expanded="true" signature="6074:6307" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6102:6266" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6294:6307" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6398:6564" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="6822:6894" placeholder="select avg(r... reviews" />
+            <marker date="1460476713035" expanded="true" signature="7477:7550" placeholder="select * fro... reviews" />
+            <marker date="1460476713035" expanded="true" signature="8078:8148" placeholder="select * fro... reviews" />
+            <marker date="1460476713035" expanded="true" signature="8903:9164" placeholder="..." />
+            <marker date="1460476713035" expanded="true" signature="9389:9471" placeholder="insert into reviews... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
