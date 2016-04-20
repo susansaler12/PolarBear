@@ -1,3 +1,9 @@
+<?php
+//need to tell ProductList.php to get $productLists from DB
+//require('../Model/productsDB.php');
+//$productLists = ProductsDB::getProductList();
+?>
+
 <!DOCTYPE html>
 <html>
 <main>
@@ -10,7 +16,7 @@
     <div class="row col-md-2 col-sm-2 col-xs-12">
 
         <div>
-
+            <form>
             <p>Search</p>
             <form name="form1" method="post" action="results1.php">
                 <input name="search" type="text" />
@@ -47,77 +53,55 @@
 
                 <?php endforeach; ?>
             </ul>
-
-
         </div>
     </div>
 
-
-
-<?php
-foreach($productList as $product) {
-    echo $product->getName() . " " . '<br />' . $product->getPrice();
-    echo $product->getDescription();
-    echo $product->getBrand();
-}
-?>
-
-
         <div id="content" class="row col-md-10 col-sm-10 col-xs-12">
-            <!-- display a table of products -->
-            <div id="show"
-                <?php
-                foreach($productList as $product){
-                    echo $product->getName() . " " . '<br />' . $product->getPrice();
-                    echo $product->getDescription();
-                    echo $product->getBrand();
 
-                    ?>
-                    <form action="." method="post">
-                        <input type="submit" value="Add to Wishlist" />
-                    </form>
-                <?php }?>
-            </div>
         <div>
-                <?php foreach($productBrand as $brand) {
+                <?php
+                $_SESSION['user_id'] = 2;
+
+                foreach($productBrand as $brand) {
                     echo $brand->getName() . " " . '<br />' . $brand->getPrice();
                     echo $brand->getDescription();
                     echo $brand->getBrand();
+
                 ?>
-                    <form action="." method="post">
-                        <input type="submit" value="Add to Wishlist" />
+                    <img src="<?php $brand->getImage() ?>"/>
+                    <form action="wishlist.php" method="post">
+                        <input type="hidden" value="<?php echo $brand->getProduct_ID(); ?>" name="product_id"/>
+                        <input type="hidden" value="<?php echo $_SESSION['user_id']; ?>" name="user_id"/>
+                        <input type="hidden" value="<?php $brand->getName();?>" name="name"/>
+<!--                        -->
+                        <input type="submit" value="Add to Wishlist" class="btn"/>
                     </form>
                 <?php }?>
         </div>
 
             <div>
                 <?php foreach($productCat as $category) {
-                    echo $category->getName() . " " . '<br />' . $category->getPrice();
+                    echo $category->getName() . '<br />' . $category->getPrice();
+                    ?>
+                    <img src="<?php $category->getImage()?>"/>
+                  <?php
                     echo $category->getDescription();
                     echo $category->getBrand();
                     ?>
 
-                <form action="." method="post">
-                       <p><a href="wishlist.php" class="btn">Add to Wishlist</a></p>
-                        <input type="submit" value="Add to Wishlist" />
-                  </form>
-                <?php }?>
+                    <form action="wishlist.php" method="post">
+                        <input type="hidden" value="<?php echo $category->getProduct_ID(); ?>" name="product_id"/>
+                        <input type="hidden" value="<?php echo $_SESSION['user_id']; ?>" name="user_id"/>
+                        <input type="hidden" value="<?php $category->getName();?>" name="name"/>
+                        <!--                        -->
+                        <input type="submit" value="Add to Wishlist" class="btn"/>
+                    </form>
+
+
+               <?php }?>
+
             </div>
         </div>
-<!--                        <form action="." method="post"-->
-<!--                                  id="delete_product_form">-->
-<!--                                <input type="hidden" name="action"-->
-<!--                                       value="delete_product" />-->
-<!--                                <input type="hidden" name="product_id"-->
-<!--                                       value="--><?php ///*echo $product->getProduct_ID(); */?><!--" />-->
-<!--                                <input type="hidden" name="category_id"-->
-<!--                                       value="--><?php ///*echo $product->getProduct_ID(); */?><!--" />-->
-<!--                                <input type="submit" value="Add to Cart" /> <!--orginally a delete button-->
-<!--                            </form>
-<!--                         </p>-->
-<!--<!--                --><?php ?>
-
-<!--            <p><a href="?action=show_add_form">Add Product</a></p>
-        </div>-->
-
-
+            </div>
+    </main>
+</html>

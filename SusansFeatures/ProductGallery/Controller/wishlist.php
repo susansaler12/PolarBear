@@ -1,29 +1,39 @@
 <?php
+
+
+//var_dump($_POST);
+require_once  ("../Model/database.php");
+require_once ("../Model/wishlistDB.php");
+require_once ("../Model/ProductsClass.php");
+require_once ("../Model/productsDB.php");
+
+
+
+$product_id = $_POST['product_id'];
+$user_id = $_POST['user_id'];
+
+
+//$name = $_POST['name'];
+
+//$names = wishlistDB::getWishlist($name);
+//$name = $wishlist::getWishlist();
+
+$wishlist = new wishlistDB();
+
+$wishlistR = $wishlist->AddWishlist($product_id, $user_id);
+$product = productsDB::getProduct($product_id);
+var_dump($product);
+
+
 ?>
 
-<div>
-    <h3>Search by Brand</h3>
-    <ul class="side-nav">
-        <?php foreach ($wishes as $wish) : ?>
-            <li>
-                <a href="?wish=<?php echo $wish['wish_id']; ?>">
-                    <?php echo $wish['wish_id']; ?>
-                </a>
-            </li>
+<!DOCTYPE html>
+<html>
 
-        <?php endforeach; ?>
-    </ul>
-</div>
+<main>
+<!--    <p>--><?php //$product->getName()?><!--</p>-->
 
-<div>
-                <?php foreach($wishes as $wish) {
-    echo $wish->getName() . " " . '<br />' . $wish->getPrice();
 
-    ?>
+    </main>
+</html>
 
-    <form action="." method="post">-->
-        <p><a href="wishlist.php" class="btn">Add to Wishlist</a></p>
-        <input type="submit" value="Add to Wishlist" />
-    </form>
-<?php }?>
-</div>
