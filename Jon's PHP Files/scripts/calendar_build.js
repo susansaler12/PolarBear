@@ -4,7 +4,7 @@ function buildCalendar(eventData) {
         if (eventData[i].confirmed == 1) {
             eventsArray.push({
                 id: i,
-                title: eventData[i].event_descrip,
+                title: eventData[i].event_name,
                 start: eventData[i].event_date,
                 backgroundColor: '#d49768'
             });
@@ -12,7 +12,7 @@ function buildCalendar(eventData) {
         else {
             eventsArray.push({
                 id: i,
-                title: eventData[i].event_descrip + ' !UNCONFIRMED',
+                title: eventData[i].event_name + ' !UNCONFIRMED',
                 start: eventData[i].event_date,
                 backgroundColor: '#ddd'
             });
@@ -30,15 +30,16 @@ function buildCalendar(eventData) {
             {
                 events: eventsArray,
                 backgroundColor: '#d49768',
-                textColor: '#fff',
+                textColor: '#000',
                 borderColor: '#d49768'
             }
         ]
     });
 
     function addDescrip(event, element) {
+        console.log(event);
         $(element).tooltip({
-            title: 'Event: ' + event.title,
+            title: event.title,
             placement: 'auto right'
         });
     }
@@ -64,37 +65,29 @@ function buildCalendar(eventData) {
     function showDetails(eventIn) {
         var thisEvent = eventData[eventIn.id];
         console.log(thisEvent);
-        $('#event_details_title').html(thisEvent.event_descrip);
-        $('#event_details_date').html(thisEvent.event_date);
-        $('#event_details_location').html(thisEvent.event_location);
-        $('#event_details_goh').html('Guest of Honor: ' + thisEvent.guest_of_honor);
+        $('#event_details_name').html(thisEvent.event_name);
+        $('#event_details_date').html("Date: " + thisEvent.event_date);
+        $('#event_details_descrip').html(thisEvent.event_descrip);
+        $('#event_details_location').html("Location: " + thisEvent.event_location);
+        if(thisEvent.guest_of_honor != null){
+            $('#event_details_goh').html('Guest of Honor: ' + thisEvent.guest_of_honor);
+        }
         if(thisEvent.surprise_for == 1) {
             $('#surprise_party').html('This Event is a surprise party!');
         }
         else{
-            $('#surprise_party').html('');
+            $('#surprise_party').css('display','none');
         }
+        console.log(thisEvent);
+        $('#view_link').attr('href', 'event_view.php?event_id=' + thisEvent.event_id);
         //*** CURRENTLY HERE - BEST WAY TO GET THE DATA TO POPULATE THIS BOX ***
     }
 
     function newEventPrompt(date, jsEvent, View) {
-        console.log(date.format());
         var newEv = confirm("Would you like to create a new event for " + date.format() + "?");
         if (newEv) {
             window.location.href = "event_details.php?new_date=" + date.format();
         }
     }
 
-    //Currently Unused Code
-    function eventHover() {
-        this.style.backgroundColor = '#fff';
-        this.style.color = '#d49768';
-        this.style.borderColor = '#fff';
-    }
-
-    function eventOff() {
-        this.style.backgroundColor = '#d49768';
-        this.style.color = '#fff';
-        this.style.borderColor = '#d49768';
-    }
 }

@@ -10,7 +10,7 @@ if(isset($_POST['finished_form'])){
     }
 
     //This will have to depend on the person logged in!
-    $inviter = "jonboss1@hotmail.com";
+    $inviter = 1;
 
     include('../Models/DB_connection.php');
     include('../Models/invites_DB.php');
