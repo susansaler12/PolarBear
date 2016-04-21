@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.addMessage {
+    text-align: center;
+}
+.addMessage label {
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    text-align: right;
+    vertical-align: top;
+    padding-top: 6px;
+}
+.addMessage input {
+    width: 300px;
+    height: 20px;
+    margin: 3px;
+    vertical-align: top;
+}
+#addMessageBtn {
+    display: block;
+    text-align: right;
+}
+#addMessageBtn .btn {
+    top: 0;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.allMessages input {
+    width: 80px;
+    padding: 3px;
+    margin-bottom: 4px;
+}
+.block {
+    display: block;
+    text-align: right;
+}
+.block .btn {
+    height: 30px;
+}
+/*.btn {
+    position: relative;
+    top: 8px;
+}*/
+.btn:hover {
+    cursor: pointer;
+}
+#footer p {
+    text-align: center;
+}
+form {
+    display: inline-block;
+    position: relative;
+}
+.messageBox {
+    height: 100px !important;
+}
+/*.section {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}*/
+.section.error {
+    text-align: center;
+}
+table {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+textarea {
+    resize: none;
+    width: 300px;
+}
+td, th {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 8px;
+    vertical-align: top;
+}
