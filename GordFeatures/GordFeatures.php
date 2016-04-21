@@ -127,8 +127,8 @@ class GordFeatures{
                 ";
             }
             $resultString .= "</tbody></table></section>";
-            return $resultString;
         }
+        return $resultString;
     }
 
     //get a user's wishlist
@@ -175,8 +175,8 @@ class GordFeatures{
                 ";
             }
             $resultString .= "</tbody></table></section>";
-            return $resultString;
         }
+        return $resultString;
     }
 
     //returns average rating of a given product
