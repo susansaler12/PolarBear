@@ -1,3 +1,4 @@
+<?php require_once 'GordFeatures.php'; ?>
 <form action="#" method="post">
     <div>
         <label for="reviewSelect">Rating:</label>

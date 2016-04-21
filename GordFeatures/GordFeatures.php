@@ -6,7 +6,7 @@ class GordFeatures{
     //checks that two users are friends
     private function checkFriends($userOne, $userTwo){
         $db = DBConnection::getDB();
-        $sqlQuery = "select * from friends where requester_email = :userOne and requestee_email = :userTwo and confirmed = 1";
+        $sqlQuery = "select * from friendlist where id = :userOne and idfriend = :userTwo and status = 1";
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':userOne', $userOne, PDO::PARAM_STR, 50);
         $preparedQuery->bindParam(':userTwo', $userTwo, PDO::PARAM_STR, 50);
@@ -33,9 +33,9 @@ class GordFeatures{
             $users = [];
         }else{
             $searchLike = '%'.$searchText.'%';
-            $sqlQuery = "select concat(f_name,' ',l_name) as name, image, location from user_profiles where concat(f_name,' ',l_name) like :searchLike";
+            $sqlQuery = "select concat(fname,' ',lname) as name, image, location from user_profiles where concat(fname,' ',lname) like :searchLike";
             $preparedQuery = $db->prepare($sqlQuery);
-            $preparedQuery->bindParam(':searchLike',$searchLike, PDO::PARAM_STR, 51);
+            $preparedQuery->bindParam(':searchLike',$searchLike, PDO::PARAM_STR, 101);
             $preparedQuery->execute();
             $preparedQuery->setFetchMode(PDO::FETCH_OBJ);
             $users = $preparedQuery->fetchAll();
@@ -47,9 +47,9 @@ class GordFeatures{
     public static function printUserSearch($searchText){
         $users = self::searchProfiles($searchText);
         if(count($users) === 0){
-            echo "<p>No users found.</p>";
+            return "<p>No users found.</p>";
         }else{
-            echo "
+            $returnString = "
                 <table>
                     <thead>
                         <th>Profile Photo</th>
@@ -58,7 +58,7 @@ class GordFeatures{
                     <tbody>
             ";
             foreach($users as $user){
-                echo "
+                $returnString .= "
                     <tr>
                         <td><img src='".$user->image."' alt='Profile photo of ".$user->name."'/></td>
                         <td>
@@ -68,14 +68,15 @@ class GordFeatures{
                     </tr>
                 ";
             }
-            echo "</tbody></table>";
+            $returnString .= "</tbody></table>";
+            return $returnString;
         }
     }
 
     //get user's name from db
     private function getName($profileId){
         $db = DBConnection::getDB();
-        $sqlQuery = 'select f_name, l_name from user_profiles where id = :profileId';
+        $sqlQuery = 'select fname, lname from user_profiles where id = :profileId';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':profileId', $profileId, PDO::PARAM_INT, 11);
         $preparedQuery->execute();
@@ -100,16 +101,16 @@ class GordFeatures{
     public static function printEvents($profileId){
         $userName = self::getName($profileId);
         $userId = null; // session data to get userId
-        echo "<section><h2>Events that $userName is attending:</h2>";
-        if(!self::checkFriends($profileId, $userId)){
-            echo "<p>You must be friends with $userName to view their event list.</p>";
-            return;
+        $resultString = "<section><h2>Events that $userName is attending:</h2>";
+        if(!self::checkFriends($profileId, $userId) and $userId != $profileId){
+            $resultString .= "<p>You must be friends with $userName to view their event list.</p>";
+            return $resultString;
         }
         $events = self::getEvents($profileId);
         if(count($events) === 0){
-            echo "<p>$userName has not confirmed attendance to any events.</p>";
+            $resultString .= "<p>$userName has not confirmed attendance to any events.</p>";
         }else{
-            echo "
+            $resultString .= "
                 <table>
                     <thead>
                         <th>Description</th>
@@ -118,21 +119,22 @@ class GordFeatures{
                     <tbody>
             ";
             foreach($events as $event){
-                echo "
+                $resultString .= "
                     <tr>
                         <td>$event->description</td>
                         <td>$event->date</td>
                     </tr>
                 ";
             }
-            echo "</tbody></table></section>";
+            $resultString .= "</tbody></table></section>";
+            return $resultString;
         }
     }
 
     //get a user's wishlist
     private function getWishlist($profileId){
         $db = DBConnection::getDB();
-        $sqlQuery = 'select name, category, price from products where product_id in (select product_id from wishlist where profileId = :profileId)';
+        $sqlQuery = 'select name, category, price from products where product_id in (select product_id from wishlist where id = :profileId)';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':profileId', $profileId, PDO::PARAM_INT, 11);
         $preparedQuery->execute();
@@ -145,16 +147,16 @@ class GordFeatures{
     public static function printWishlist($profileId){
         $userName = self::getName($profileId);
         $userId = null; // session data to get userId
-        echo "<section><h2>$userName's wishlist:</h2>";
-        if(!self::checkFriends($profileId, $userId)){
-            echo "<p>You must be friends with $userName to view their wishlist.</p>";
-            return;
+        $resultString = "<section><h2>$userName's wishlist:</h2>";
+        if(!self::checkFriends($profileId, $userId)  and $userId != $profileId){
+            $resultString .= "<p>You must be friends with $userName to view their wishlist.</p>";
+            return $resultString;
         }
         $wishlist = self::getWishlist($profileId);
         if(count($wishlist) === 0){
-            echo "<p>$userName has no items on their wishlist.</p>";
+            $resultString .= "<p>$userName has no items on their wishlist.</p>";
         }else{
-            echo "
+            $resultString .= "
                 <table>
                     <thead>
                         <th>Product Name</th>
@@ -164,7 +166,7 @@ class GordFeatures{
                     <tbody>
             ";
             foreach($wishlist as $item){
-                echo "
+                $resultString .= "
                     <tr>
                         <td>$item->name</td>
                         <td>$item->category</td>
@@ -172,7 +174,8 @@ class GordFeatures{
                     </tr>
                 ";
             }
-            echo "</tbody></table></section>";
+            $resultString .= "</tbody></table></section>";
+            return $resultString;
         }
     }
 
@@ -221,13 +224,13 @@ class GordFeatures{
     //prints reviews of a given product
     public static function printReviews($productId){
         $reviews = self::getReviews($productId);
-        echo "<h2>Product Reviews<h2>";
+        $resultString = "<h2>Product Reviews<h2>";
         if(count($reviews) === 0){
-            echo "<p>This product has not yet been reviewed.</p>";
+            $resultString .= "<p>This product has not yet been reviewed.</p>";
         }else{
             foreach($reviews as $review){
                 $username = self::getName($review->user_id);
-                echo "
+                $resultString .= "
                     <article>
                         <h3>User: $username</h3>
                         <p>Posted: $review->post_date</p>
@@ -237,6 +240,7 @@ class GordFeatures{
                 ";
             }
         }
+        return $resultString;
     }
 
     //creates new review
