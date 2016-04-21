@@ -1,16 +1,17 @@
-.0<?php
+<?php
 class productsDB {
     public static function getProductList(){
-        $db = Database::getDB();
+        $db = DB_connection::getDB();
         $sql = "SELECT * FROM products";
         $result = $db->query($sql);
+
 
         $productlist = $result->fetchAll();
         return $productlist;
     }
 
     public static function getProducts($product) {
-        $db = Database::getDB();
+        $db = DB_connection::getDB();
         $query = "SELECT * FROM products
                   WHERE product_id = '$product'
                   ORDER BY product_id";
@@ -32,7 +33,7 @@ class productsDB {
 
     //get Category
     public static function getCategory(){
-        $db = Database::getDB();
+        $db = DB_connection::getDB();
         $sql = "SELECT DISTINCT category FROM products";
         $result = $db->query($sql);
 
@@ -41,27 +42,38 @@ class productsDB {
     }
 
     public static function getProductsinCat($category){
-        $db = Database::getDB();
+        $db = DB_connection::getDB();
         $query = "SELECT * FROM products
-           WHERE category = '$category'";
-        $result = $db->query($query);
-        $products = array();
-        foreach ($result as $row) {
-            $product = new Product($row['product_id'],
-                $row['name'],
-                $row['description'],
-                $row['price'],
-                $row['image'],
-                $row['category'],
-                $row['brand']);
+           WHERE category = :category";
+
+        $sql = $db->prepare($query);
+
+        $sql->bindParam(":category", $category, PDO::PARAM_STR);
+        $sql->setFetchMode(PDO::FETCH_OBJ);
+        $sql->execute();
+
+        $prodinCat = $sql->fetchALL();
+
+        $products = [];
+        foreach($prodinCat as $item){
+            $product = new Product(
+                $item->product_id,
+                $item->name,
+                $item->description,
+                $item->price,
+                $item->image,
+                $item->category,
+                $item->brand
+            );
             $products[] = $product;
         }
+
         return $products;
     }
 
     //GET PRODUCTS BY BRAND//
     public static function getBrand(){
-        $db = Database::getDB();
+        $db = DB_connection::getDB();
         $sql = "SELECT DISTINCT brand FROM products";
         $result = $db->query($sql);
 
@@ -69,7 +81,7 @@ class productsDB {
         return $brand;
     }
      public static function getProductsinBrand($brand){
-         $db = Database::getDB();
+         $db = DB_connection::getDB();
          $query = "SELECT * FROM products
            WHERE brand = '$brand'";
          $result = $db->query($query);
@@ -88,75 +100,37 @@ class productsDB {
      }
 
     public static function getProduct($product_id) {
-        $db = Database::getDB();
+        $db = DB_connection::getDB();
         $query = "SELECT * FROM products
-                  WHERE product_id = '$product_id'";
-        $statement = $db->query($query);
-        $row = $statement->fetch();
-        $product = new Product($row['product_id'],
-            $row['name'],
-            $row['description'],
-            $row['price'],
-            $row['image'],
-            $row['category'],
-            $row['brand']);
+                  WHERE product_id = :product_id";
+//        $statement = $db->query($query);
+        $sql = $db->prepare($query);
+
+        $sql->bindParam(":product_id", $product_id, PDO::PARAM_INT);
+        $sql->setFetchMode(PDO::FETCH_OBJ);
+        $sql->execute();
+        $product = $sql->fetch();
         return $product;
+
+
+//        $row = $statement->fetch();
+//        $product = new Product($row['product_id'],
+//            $row['name'],
+//            $row['description'],
+//            $row['price'],
+//            $row['image'],
+//            $row['category'],
+//            $row['brand']);
+//        return $product;
     }
 
     //DELETE PRODUCTS///
 public static function deleteProduct($product_id) {
-    $db = Database::getDB();
+    $db = DB_connection::getDB();
     $query = "DELETE FROM products
                   WHERE product_id = '$product_id'";
     $row_count = $db->exec($query);
     return $row_count;
 }
-// ADD PRODUCTS ////
-public static function addProduct($product) {
-    $db = Database::getDB();
-
-    $product_id = $product->getProducts()->getProduct_ID();
-    $name = $product->getName();
-    $category = $product->getCategory();
-    $price = $product->getPrice();
-    $description = $product->getDescription();
-    $image = $product->getImage();
-    $brand=$product->getBrand();
-
-    $query ="INSERT INTO products
-                 (product_id, name, category, price, description, image, brand)
-             VALUES
-                 ('$product_id', '$name', '$category', '$price','$description','$image','$brand')";
-
-    $row_count = $db->exec($query);
-    return $row_count;
-}
-    //ADD PRODUCTS TO WISHLIST
-public static  function getWishlist($product){
-
-    $db = Database::getDB();
-
-    $product_id = $product->getProductList()->getProduct_ID();
-    $name = $product->getName();
-    $wish_id = $product->getWish();
-    $price = $product->getPrice();
-   /* $category = $product->getCategory();
-
-    $description = $product->getDescription();
-    $image = $product->getImage();
-    $brand=$product->getBrand();*/
-
-   $query = "SELECT p.product_id, w.wish_id, p.name, p.price
-                FROM products p JOIN wishlist w
-              ON p.product_id = w.product_id
-               WHERE product_id = '$product_id', name = '$name', wish_id= '$wish_id', price = '$price'";
-
-   $row_count = $db->exec($query);
-    return $row_count;
-// 
-}
-
-
-
 
 }

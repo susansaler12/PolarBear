@@ -1,11 +1,14 @@
 <?php
+session_start();
+
+
 include ('../view/header.php');
 
 require('../Model/ProductsClass.php');
 require('../Model/productsDB.php');
 require('../Model/database.php');
+//include ('results1.php');
 
-require_once ('results1.php');
 if (isset($_POST['action'])) {
     $action = $_POST['action'];
 } else if (isset($_GET['action'])) {
@@ -22,7 +25,14 @@ if ($action == 'list_products') {
     else{
         $product = $_GET['product_id'];
     }
-    if(!isset($_GET['category'])) {
+    if(!isset($_GET['user_id']))
+    {
+        $user='Profile';
+    }
+    else{
+        $user= $_GET['user_id'];
+    }
+        if(!isset($_GET['category'])) {
         $category = 'GalleryHome';
     }else
     {
@@ -50,24 +60,18 @@ if ($action == 'list_products') {
         $wish = $_GET['wish_id'];
     }
 
-    // Get product and category data
+
     $productCat = ProductsDB::getProductsinCat($category);
-   // $productWish = ProductsDB::getWishlist($wish);
-    $productList = ProductsDB::getProducts($product);
     $productBrand = ProductsDB::getProductsinBrand($brand);
-    $productlists = ProductsDB::getProductList();
     $categories = ProductsDB::getCategory();
     $brands = ProductsDB::getBrand();
-   //$wishes = ProductsDB::getWishlist();
 
- // var_dump($productWish); exit();
-    //$products = ProductsDB::getProduct($product_id);
 
     // Display the product list
-   // include ('../Controller/wishlist.php');
+
     include('../Controller/ProductList.php');
     include('../Controller/GalleryHome.php');
-} else if ($action == 'delete_product') {
+}   else if ($action == 'delete_product') {
     // Get the IDs
     $product_id = $_POST['product_id'];
    // $brand = $_POST['brand'];
@@ -81,7 +85,9 @@ if ($action == 'list_products') {
     $products = ProductsDB::getProducts($product);
 
     include('product_add.php');
-} else if ($action == 'product_add') {
+}
+
+else if ($action == 'product_add') {
     $product_id = $_POST['product_id'];
     $description = $_POST['description'];
     $name = $_POST['name'];
@@ -90,18 +96,19 @@ if ($action == 'list_products') {
     $image = $_POST['image'];
     $brand = $_POST['brand'];
 
-    // Validate the inputs
-    if (empty($code) || empty($name) || empty($price)) {
-        $error = "Invalid product data. Check all fields and try again.";
-        include('../errors/error.php');
-    } else {
-        $current_category = CategoryDB::getCategory($category_id);
-        $product = new Product($current_category, $code, $name, $price);
-        ProductDB::addProduct($product);
 
-        // Display the Product List page for the current category
-        header("Location: .?product_id=$product_id");
-    }
+    // Validate the inputs
+//    if (empty($code) || empty($name) || empty($price)) {
+//        $error = "Invalid product data. Check all fields and try again.";
+//        include('../errors/error.php');
+//    } else {
+//        $current_category = CategoryDB::getCategory($category_id);
+//        $product = new Product($current_category, $code, $name, $price);
+//        ProductDB::addProduct($product);
+//
+//        // Display the Product List page for the current category
+//        header("Location: .?product_id=$product_id");
+//    }
 }
 
 

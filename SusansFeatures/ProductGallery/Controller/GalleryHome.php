@@ -1,22 +1,15 @@
-<!--<html>-->
-<!---->
-<!--<main>-->
-<!--    <div id="content" class="row col-md-10 col-sm-10 col-xs-12">-->
-<!--        <!-- display a table of products -->-->
-<!--        <div id="show"-->
-<!--        --><?php
-//        //foreach($productList as $product){
-//echo $_GET['name'];
-//
-////        echo $product['name'] . " " . '<br />' . $product['price'];
-////        echo $product['description'];
-////        echo $product['brand'];
-//
-//        ?>
-<!--        <form action="." method="post">-->
-<!--            <input type="submit" value="Add to Wishlist" />-->
-<!--        </form>-->
-<!--        --><?php ////}?>
-<!--    </div>-->
-<!--</main>-->
-<!--</html>-->
+<?php
+
+foreach($productBrand as $brand) {
+echo $brand->getName() . " " . '<br />' . $brand->getPrice();
+echo $brand->getDescription();
+echo $brand->getBrand();
+?>
+<form action="wishlist.php" method="post">
+    <input type="hidden" value="<?php echo $brand->getProduct_ID(); ?>" name="product_id"/>
+    <input type="hidden" value="<?php echo $_SESSION['user_id']; ?>" name="user_id"/>
+    <input type="hidden" value="<?php $brand->getName();?>" name="name"/>
+    <!--                        -->
+    <input type="submit" value="Add to Wishlist" class="btn"/>
+</form>
+<?php }?>

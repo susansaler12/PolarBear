@@ -14,26 +14,20 @@ include('../Models/events_DB.php');
 include('../Models/invites_DB.php');
 
 
-$tOutput = "<table id='main-display'><thead><th>Event ID</th><th>Description</th><th>Date</th><th>Location</th><th>Event Creator</th><th>Guest of Honor</th><th>Surprise For</th><th>Action</th></thead>";
-$allEvents = $events::getAll();
+$tOutput = "<table id='main-display'><thead><th>Event Name</th><th>Description</th><th>Date</th><th>Location</th>><th>Guest of Honor</th></thead>";
+$allEvents = events::getEventsForUser(1);
+
 foreach($allEvents as $row){
     $tOutput .= "<tr>";
-    foreach($row as $key => $column){
-        if(is_int($key)){
-            if($column != null){
-                $tOutput .=  "<td>$column</td>";
-            }
-            else{
-                $tOutput .= "<td>null</td>";
-            }
-        }
-    }
+    $tOutput .= "<td>" .$row['event_name']."</td>";
+    $tOutput .= "<td>" .$row['event_descrip']."</td>";
+    $tOutput .= "<td>" .$row['event_date']."</td>";
+    $tOutput .= "<td>" .$row['event_location']."</td>";
     $tOutput .= "<td><a href='event_details.php?event_id=$row[0]'>EDIT</a> | <a id='delete_row' href='../process_pages/delete_event.php?event_id=$row[0]'>DELETE</a> | <a href='event_invite.php?event_id=$row[0]'>INVITE</a></td></tr>";
 }
 $tOutput .= "</table>";
 echo $tOutput;
 ?>
-
 <h3><a href="event_details.php" id="create_button">Create a New Event</a></h3>
 <?php
 if(isset($_GET['message'])){

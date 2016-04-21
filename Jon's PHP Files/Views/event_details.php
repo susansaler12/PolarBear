@@ -4,13 +4,10 @@ $queryString = "";
 
 if(isset($_GET['event_id'])){
     include('../Models/DB_connection.php');
-    include('../Models/events_DB.php');
-    $events = new events;
-    $results = $events::getEvent($_GET['event_id']);
+    $results = events::getEvent($_GET['event_id']);
     $queryString = "?event_id=" . $_GET['event_id'];
 }
 
-$buttonText;
 if(isset($results)){
     echo "<h1>Edit Event Details</h1>";
     $buttonText = "Update Event";
@@ -21,9 +18,9 @@ else{
 }
 
 ?>
-<!--<script type="text/javascript" src="valEvent.js"></script>-->
-<!-- Javscript validation for the date format is not yet working-->
-<form action="../process_pages/update_event.php<?php echo $queryString ?>" method="post" name="event_details_form" id="event_details_form">
+<form action="../process_pages/update_event.php" method="post" name="event_details_form" id="event_details_form">
+    <label for="event_name" >Event Name: </label>
+    <input type="text" name="event_name" value="<?php echo $results->event_name?>"/><br/>
     <label for="event_descrip" >Event Description: </label>
     <input type="text" name="event_descrip" value="<?php echo $results->event_descrip?>"/><br/>
     <label for="event_date">Date: </label>
@@ -42,5 +39,4 @@ else{
     <br/>
     <input type="submit" name="finished_form" <?php echo "value='$buttonText'"?>/>
 </form>
-
-<h3><a href="index.php" id="back_button"> <<< Back to Events</a></h3>
+<h3><a href="calendar_view.php" id="back_button"> <<< Back to Events</a></h3>
