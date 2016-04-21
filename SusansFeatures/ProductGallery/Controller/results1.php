@@ -6,9 +6,9 @@
 $searchParam = isset($_POST['search']) ?  $_POST['search'] :  '';//?????
 //$searchParam = "watch";
 
-$search_sql="SELECT * FROM products WHERE Keywords LIKE '%".$searchParam."%' || brand LIKE '%".$searchParam."%' ||name LIKE '%".$searchParam."%'";
+$search_sql="SELECT * FROM products WHERE category LIKE '%".$searchParam."%' OR brand LIKE '%".$searchParam."%' OR name LIKE '%".$searchParam."%'";
 //$search_sql="SELECT * FROM products WHERE name LIKE '%".$searchParam."%' OR brand LIKE '%".$searchParam."%'";
-$result=$db->query($search_sql);
+$result=self::$db->query($search_sql);
 
 $p = $result->fetchAll();
 

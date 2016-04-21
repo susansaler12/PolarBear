@@ -1,9 +1,9 @@
 <?php
 class Product
 {
-    private $product_id, $name, $description, $price, $image, $category, $brand, $wish;
+    private $product_id, $name, $description, $price, $image, $category, $brand;
 
-    public function __construct($product_id, $name, $description, $price, $image, $category, $brand, $wish)
+    public function __construct($product_id, $name, $description, $price, $image, $category, $brand )
     {
         $this->product_id = $product_id;
         $this->name = $name;
@@ -12,7 +12,7 @@ class Product
         $this->image = $image;
         $this->category = $category;
         $this->brand = $brand;
-        $this->wish = $wish;
+
     }
 
     public function getProduct_ID()
@@ -97,10 +97,6 @@ class Product
     public function setCategoryBrand($value)
     {
         $this->brand = $value;
-    }
-    public function getWish()
-    {
-        return $this->wish;
     }
 }
 ?>

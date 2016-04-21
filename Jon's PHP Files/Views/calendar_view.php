@@ -18,11 +18,13 @@
     <div id="calendar" class="ui-widget" style=""></div>
     <div id="dark_background">
         <div id="event_details_display">
-            <h2 id="event_details_title"></h2>
-            <h3 id="event_details_date"></h3>
+            <h2 id="event_details_name"></h2>
+            <p id="event_details_date"></p>
             <p id="event_details_location"></p>
+            <p id="event_details_descrip"></p>
             <p id="event_details_goh"></p>
             <p id="surprise_party"></p>
+            <span><a href="#" id="view_link">View Event</a></span>
         </div>
     </div>
 </body>
@@ -32,12 +34,9 @@ include('../Models/DB_connection.php');
 include('../Models/invites_DB.php');
 include('../Models/events_DB.php');
 
-$loggedIn = 'GordSchnurr@gmail.com';
+$loggedIn = 1;
 $events = events::getEventsForUser($loggedIn);
-$arraytoJSON = [];
-
 $eventsJSON = json_encode($events);
 echo "<script>buildCalendar($eventsJSON)</script>";
 
 ?>
-
