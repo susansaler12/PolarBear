@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once '../valLibrary.php';
 require_once 'dbclass.php';
@@ -16,7 +17,7 @@ if(isset($_POST['btnSubmit'])){
     $id = "";
     $email = trim($_POST['email']);
     $passwordIn = trim($_POST['password']);
-    $password = md5($passwordIn);
+    $password = sha1($passwordIn, false);
 
     //pull data info
     $db = Dbclass::getDB();
@@ -39,8 +40,6 @@ if(isset($_POST['btnSubmit'])){
 
         if($r["email"] == $email && $r["password"] == $password)
         {
-            session_start();
-
             $_SESSION['id'] = $r['id'];
             $_SESSION['fname'] = $r['fname'];
             $_SESSION['loggedIn'] = true;
@@ -48,13 +47,13 @@ if(isset($_POST['btnSubmit'])){
             //TEMPT LOCATION TO CHECK IF LOGGED IN OR NOT
 
             //check if logged in
-            if(isset($_SESSION['id']))
+            /*if(isset($_SESSION['id']))
             {
                 echo "<a href='logout.php'>Logout</a>";
                 //DO WHATEVER YOU WANT, LIKE REDIRECT TO PAGE
                 //header("location:../message-board/index.php");
-            }
-            //header("location:../message-board/index.php");
+            }*/
+            header("location:../message-board/index.php");
         }
         else {
             $errorLogin = "Invalid username / password, please try again";

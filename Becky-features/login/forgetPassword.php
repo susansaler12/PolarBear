@@ -31,8 +31,8 @@ if(isset($_POST['btnSubmit'])){
             $fname = $r["fname"];
 
             //random generate passwowrd
-            $resetPassword = substr(md5(uniqid(rand(),1)),3,8);
-            $password = md5($resetPassword); //encrypted version for database entry
+            $resetPassword = substr(sha1(uniqid(rand(),1)),3,8);
+            $password = sha1($resetPassword); //encrypted version for database entry
 
             //GMAIL SETUP TO EMAIL USER WITH RANDOM PICK PASSWORD
             date_default_timezone_set('EST');
