@@ -34,6 +34,7 @@ class GordFeatures{
         }else{
             $searchLike = '%'.$searchText.'%';
             $sqlQuery = "select concat(fname,' ',lname) as name, image, location from user_profiles where concat(fname,' ',lname) like :searchLike";
+            //$sqlQuery = "select full_name as name, image, location from user_profiles where match (full_name) against (:searchLike)";
             $preparedQuery = $db->prepare($sqlQuery);
             $preparedQuery->bindParam(':searchLike',$searchLike, PDO::PARAM_STR, 101);
             $preparedQuery->execute();
@@ -76,7 +77,7 @@ class GordFeatures{
     //get user's name from db
     private function getName($profileId){
         $db = DBConnection::getDB();
-        $sqlQuery = 'select fname, lname from user_profiles where id = :profileId';
+        $sqlQuery = 'select full_name from user_profiles where id = :profileId';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':profileId', $profileId, PDO::PARAM_INT, 11);
         $preparedQuery->execute();
@@ -100,7 +101,7 @@ class GordFeatures{
     //prints table of events a user is attending
     public static function printEvents($profileId){
         $userName = self::getName($profileId);
-        $userId = null; // session data to get userId
+        $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
         $resultString = "<section><h2>Events that $userName is attending:</h2>";
         if(!self::checkFriends($profileId, $userId) and $userId != $profileId){
             $resultString .= "<p>You must be friends with $userName to view their event list.</p>";
@@ -146,7 +147,7 @@ class GordFeatures{
     //prints table of user's wishlist
     public static function printWishlist($profileId){
         $userName = self::getName($profileId);
-        $userId = null; // session data to get userId
+        $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
         $resultString = "<section><h2>$userName's wishlist:</h2>";
         if(!self::checkFriends($profileId, $userId)  and $userId != $profileId){
             $resultString .= "<p>You must be friends with $userName to view their wishlist.</p>";
@@ -258,7 +259,7 @@ class GordFeatures{
 
     //takes post data and creates new review
     public static function postReview($productId){
-        $userId = null; // change to get userId from session var
+        $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
         $rating = $_POST['reviewSelect'];
         $description = htmlspecialchars(trim($_POST['reviewText']));
         if($rating !== ''){
