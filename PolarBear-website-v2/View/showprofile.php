@@ -16,6 +16,7 @@ $result = $db->query($sql);
 
 
 require_once "header.php";
+require_once "../Model/GordFeatures.php";
 foreach($result as $p){
 
     echo "<div class='Pname'>" . $p['fname'] . " " . $p['lname'] . "</div>";
@@ -42,6 +43,10 @@ foreach($result as $p){
         "<input type='submit' name='uprofile' value='UPDATE'/>".
         "</form>";
     echo $fupdate . "<div>";
+
+    echo GordFeatures::printWishlist($id);
+    //This will print the current user's id
+    //If you need to do this for other people's profiles this will require other logic
 }
 require_once "footer.php";
 ?>

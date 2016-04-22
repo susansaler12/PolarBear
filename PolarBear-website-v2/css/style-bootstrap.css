@@ -172,6 +172,13 @@ img {
 	}
 }
 
+/*-------------PRODUCT GALLERY STYLING---------------*/
+.productimg{
+    width: 300px;
+    height: 300px;
+}
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 	/* column of 5 */
@@ -180,12 +187,12 @@ img {
 	}
 }
 
-/* Medium devices (desktops, 992px and up) */
+/* Medium devices (desktops, 992px and up)
 @media (min-width:@screen-md-min) {
 
-}
+}*/
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices (large desktops, 1200px and up)
 @media (min-width:@screen-lg-min) {
 	
-}
+}*/

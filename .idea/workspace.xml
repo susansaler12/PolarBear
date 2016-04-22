@@ -25,46 +25,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBConnection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GordFeatures/DBConnection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.08">
-              <caret line="22" column="16" selection-start-line="21" selection-start-column="41" selection-end-line="22" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GordFeatures.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GordFeatures/GordFeatures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.152057">
-              <caret line="178" column="29" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+            <state vertical-scroll-proportion="2.1218638">
+              <caret line="85" column="59" selection-start-line="85" selection-start-column="59" selection-end-line="85" selection-end-column="59" />
               <folding>
-                <marker date="1461257921518" expanded="true" signature="214:297" placeholder="select * fro... friends" />
-                <marker date="1461257921518" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
-                <marker date="1461257921518" expanded="true" signature="1935:2123" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="1963:2082" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="2110:2123" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="2223:2508" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="2354:2482" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="2773:2833" placeholder="select f_nam... user_profiles" />
-                <marker date="1461257921518" expanded="true" signature="3310:3471" placeholder="select event... " />
-                <marker date="1461257921518" expanded="true" signature="4520:4701" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="4548:4660" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="4688:4701" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="4803:4928" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="5201:5319" placeholder="select name,... products" />
-                <marker date="1461257921518" expanded="true" signature="5265:5318" placeholder="select produ... wishlist" />
-                <marker date="1461257921518" expanded="true" signature="6342:6575" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="6370:6534" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="6562:6575" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="6678:6844" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="7144:7216" placeholder="select avg(r... reviews" />
-                <marker date="1461257921518" expanded="true" signature="7799:7872" placeholder="select * fro... reviews" />
-                <marker date="1461257921518" expanded="true" signature="8400:8470" placeholder="select * fro... reviews" />
-                <marker date="1461257921518" expanded="true" signature="9260:9521" placeholder="..." />
-                <marker date="1461257921518" expanded="true" signature="9776:9858" placeholder="insert into reviews... " />
+                <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+                <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+                <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+                <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+                <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+                <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+                <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+                <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+                <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+                <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+                <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+                <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+                <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
               </folding>
             </state>
           </provider>
@@ -79,8 +71,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GordFeatures/database_error.php" />
-        <option value="$PROJECT_DIR$/GordFeatures/searchForm.php" />
         <option value="$PROJECT_DIR$/GordFeatures/postReviewForm.php" />
+        <option value="$PROJECT_DIR$/GordFeatures/searchForm.php" />
         <option value="$PROJECT_DIR$/GordFeatures/GordFeatures.php" />
       </list>
     </option>
@@ -125,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -153,6 +146,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="PolarBear-website-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PBG-Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PBG-Repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="GordFeatures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -160,7 +167,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,11 +220,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -236,6 +242,26 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18759455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -253,6 +279,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/GordFeatures/GordFeatures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+            <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+            <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+            <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+            <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+            <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+            <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GordFeatures/DBConnection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -266,30 +327,32 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461257921518" expanded="true" signature="214:297" placeholder="select * fro... friends" />
-            <marker date="1461257921518" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="1935:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="1963:2082" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2110:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2223:2508" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2354:2482" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2773:2833" placeholder="select f_nam... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="3310:3471" placeholder="select event... " />
-            <marker date="1461257921518" expanded="true" signature="4520:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4548:4660" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4688:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4803:4928" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="5201:5319" placeholder="select name,... products" />
-            <marker date="1461257921518" expanded="true" signature="5265:5318" placeholder="select produ... wishlist" />
-            <marker date="1461257921518" expanded="true" signature="6342:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6370:6534" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6562:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6678:6844" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="7144:7216" placeholder="select avg(r... reviews" />
-            <marker date="1461257921518" expanded="true" signature="7799:7872" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="8400:8470" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="9260:9521" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="9776:9858" placeholder="insert into reviews... " />
+            <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+            <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+            <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+            <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+            <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+            <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+            <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
           </folding>
         </state>
       </provider>
@@ -323,41 +386,32 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="143" column="37" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="37" />
           <folding>
-            <marker date="1461257921518" expanded="true" signature="214:297" placeholder="select * fro... friends" />
-            <marker date="1461257921518" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="1935:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="1963:2082" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2110:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2223:2508" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2354:2482" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2773:2833" placeholder="select f_nam... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="3310:3471" placeholder="select event... " />
-            <marker date="1461257921518" expanded="true" signature="4520:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4548:4660" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4688:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4803:4928" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="5201:5319" placeholder="select name,... products" />
-            <marker date="1461257921518" expanded="true" signature="5265:5318" placeholder="select produ... wishlist" />
-            <marker date="1461257921518" expanded="true" signature="6342:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6370:6534" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6562:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6678:6844" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="7144:7216" placeholder="select avg(r... reviews" />
-            <marker date="1461257921518" expanded="true" signature="7799:7872" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="8400:8470" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="9260:9521" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="9776:9858" placeholder="insert into reviews... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gwenfeatures/Model/addfriend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1460489875837" expanded="true" signature="1050:1101" placeholder="SELECT id FR... user_profiles" />
-            <marker date="1460489875837" expanded="true" signature="1414:1486" placeholder="INSERT INTO friendlist... " />
+            <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+            <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+            <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+            <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+            <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+            <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+            <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
           </folding>
         </state>
       </provider>
@@ -375,30 +429,32 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461257921518" expanded="true" signature="214:297" placeholder="select * fro... friends" />
-            <marker date="1461257921518" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="1935:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="1963:2082" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2110:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2223:2508" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2354:2482" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2773:2833" placeholder="select f_nam... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="3310:3471" placeholder="select event... " />
-            <marker date="1461257921518" expanded="true" signature="4520:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4548:4660" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4688:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4803:4928" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="5201:5319" placeholder="select name,... products" />
-            <marker date="1461257921518" expanded="true" signature="5265:5318" placeholder="select produ... wishlist" />
-            <marker date="1461257921518" expanded="true" signature="6342:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6370:6534" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6562:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6678:6844" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="7144:7216" placeholder="select avg(r... reviews" />
-            <marker date="1461257921518" expanded="true" signature="7799:7872" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="8400:8470" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="9260:9521" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="9776:9858" placeholder="insert into reviews... " />
+            <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+            <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+            <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+            <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+            <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+            <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+            <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
           </folding>
         </state>
       </provider>
@@ -416,30 +472,32 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461257921518" expanded="true" signature="214:297" placeholder="select * fro... friends" />
-            <marker date="1461257921518" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="1935:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="1963:2082" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2110:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2223:2508" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2354:2482" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2773:2833" placeholder="select f_nam... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="3310:3471" placeholder="select event... " />
-            <marker date="1461257921518" expanded="true" signature="4520:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4548:4660" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4688:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4803:4928" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="5201:5319" placeholder="select name,... products" />
-            <marker date="1461257921518" expanded="true" signature="5265:5318" placeholder="select produ... wishlist" />
-            <marker date="1461257921518" expanded="true" signature="6342:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6370:6534" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6562:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6678:6844" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="7144:7216" placeholder="select avg(r... reviews" />
-            <marker date="1461257921518" expanded="true" signature="7799:7872" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="8400:8470" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="9260:9521" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="9776:9858" placeholder="insert into reviews... " />
+            <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+            <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+            <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+            <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+            <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+            <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+            <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
           </folding>
         </state>
       </provider>
@@ -449,31 +507,61 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461257921518" expanded="true" signature="214:297" placeholder="select * fro... friends" />
-            <marker date="1461257921518" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="1935:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="1963:2082" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2110:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2223:2508" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2354:2482" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2773:2833" placeholder="select f_nam... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="3310:3471" placeholder="select event... " />
-            <marker date="1461257921518" expanded="true" signature="4520:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4548:4660" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4688:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4803:4928" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="5201:5319" placeholder="select name,... products" />
-            <marker date="1461257921518" expanded="true" signature="5265:5318" placeholder="select produ... wishlist" />
-            <marker date="1461257921518" expanded="true" signature="6342:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6370:6534" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6562:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6678:6844" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="7144:7216" placeholder="select avg(r... reviews" />
-            <marker date="1461257921518" expanded="true" signature="7799:7872" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="8400:8470" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="9260:9521" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="9776:9858" placeholder="insert into reviews... " />
+            <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+            <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+            <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+            <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+            <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+            <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+            <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/calendar_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/view_invites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.03220036">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Models/invites_DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -484,36 +572,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GordFeatures/DBConnection.php">
+    <entry file="file://$PROJECT_DIR$/GordFeatures/postReviewForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.08">
-          <caret line="22" column="16" selection-start-line="21" selection-start-column="41" selection-end-line="22" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.45878136">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gwenfeatures/Model/addfriend.php">
+    <entry file="file://$PROJECT_DIR$/Becky-features/login/loginDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460489875837" expanded="true" signature="1050:1101" placeholder="SELECT id FR... user_profiles" />
-            <marker date="1460489875837" expanded="true" signature="1414:1486" placeholder="INSERT INTO friendlist... " />
+            <marker date="1460475382379" expanded="true" signature="394:530" placeholder="UPDATE user_... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GordFeatures/searchForm.php">
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/View/showprofile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461259897233" expanded="true" signature="437:478" placeholder="SELECT * FRO... user_profiles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/Model/listprofile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461259897202" expanded="true" signature="85:112" placeholder="SELECT * FRO... user_profiles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/Model/updateprofile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.92">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+          <folding>
+            <marker date="1461259897202" expanded="true" signature="631:847" placeholder="UPDATE user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/Model/addprofile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.08">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <marker date="1461259897186" expanded="true" signature="5506:5710" placeholder="INSERT INTO user_profiles... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/View/addprofileform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/calendar_view.php">
+    <entry file="file://$PROJECT_DIR$/Becky-features/login/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="30.16">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <marker date="1461259897170" expanded="true" signature="458:535" placeholder="SELECT * FRO... user_profiles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Becky-features/login/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.96">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Becky-features/message-board/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1461337530319" expanded="true" signature="132:212" placeholder="SELECT * FRO... messages" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/View/confirmfriendview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/Model/confirmfriend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.12">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <marker date="1461259897186" expanded="true" signature="511:563" placeholder="UPDATE frien... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/View/addfriendform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/Model/addfriend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9749104">
+          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
+          <folding>
+            <marker date="1461259897186" expanded="true" signature="1618:1669" placeholder="SELECT id FR... user_profiles" />
+            <marker date="1461259897186" expanded="true" signature="1984:2061" placeholder="INSERT INTO friendlist... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GwensFeatures/Model/denyfriend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71684587">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <folding>
+            <marker date="1461259897202" expanded="true" signature="503:555" placeholder="UPDATE frien... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GordFeatures/DBConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45878136">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/event_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.4">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -521,13 +731,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/event_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.030411448">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/event_details.php">
+    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/process_pages/add_invite.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -535,43 +745,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GordFeatures/postReviewForm.php">
+    <entry file="file://$PROJECT_DIR$/Jon's PHP Files/Views/event_invite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45796064">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GordFeatures/searchForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3154122">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GordFeatures/GordFeatures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.152057">
-          <caret line="178" column="29" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+        <state vertical-scroll-proportion="2.1218638">
+          <caret line="85" column="59" selection-start-line="85" selection-start-column="59" selection-end-line="85" selection-end-column="59" />
           <folding>
-            <marker date="1461257921518" expanded="true" signature="214:297" placeholder="select * fro... friends" />
-            <marker date="1461257921518" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="1935:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="1963:2082" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2110:2123" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2223:2508" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2354:2482" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="2773:2833" placeholder="select f_nam... user_profiles" />
-            <marker date="1461257921518" expanded="true" signature="3310:3471" placeholder="select event... " />
-            <marker date="1461257921518" expanded="true" signature="4520:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4548:4660" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4688:4701" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="4803:4928" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="5201:5319" placeholder="select name,... products" />
-            <marker date="1461257921518" expanded="true" signature="5265:5318" placeholder="select produ... wishlist" />
-            <marker date="1461257921518" expanded="true" signature="6342:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6370:6534" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6562:6575" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="6678:6844" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="7144:7216" placeholder="select avg(r... reviews" />
-            <marker date="1461257921518" expanded="true" signature="7799:7872" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="8400:8470" placeholder="select * fro... reviews" />
-            <marker date="1461257921518" expanded="true" signature="9260:9521" placeholder="..." />
-            <marker date="1461257921518" expanded="true" signature="9776:9858" placeholder="insert into reviews... " />
+            <marker date="1461337447112" expanded="true" signature="214:297" placeholder="select * fro... friends" />
+            <marker date="1461337447112" expanded="true" signature="1175:1296" placeholder="select conca... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="1326:1372" placeholder="select full_... " />
+            <marker date="1461337447112" expanded="true" signature="1326:1432" placeholder="select full_... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="2071:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2099:2218" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2246:2259" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2359:2644" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2490:2618" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="2909:2966" placeholder="select f_nam... user_profiles" />
+            <marker date="1461337447112" expanded="true" signature="3443:3604" placeholder="select event... " />
+            <marker date="1461337447112" expanded="true" signature="4666:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4694:4806" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4834:4847" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="4949:5074" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="5347:5465" placeholder="select name,... products" />
+            <marker date="1461337447112" expanded="true" signature="5411:5464" placeholder="select produ... wishlist" />
+            <marker date="1461337447112" expanded="true" signature="6501:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6529:6693" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6721:6734" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="6837:7003" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="7303:7375" placeholder="select avg(r... reviews" />
+            <marker date="1461337447112" expanded="true" signature="7958:8031" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="8559:8629" placeholder="select * fro... reviews" />
+            <marker date="1461337447112" expanded="true" signature="9419:9680" placeholder="..." />
+            <marker date="1461337447112" expanded="true" signature="9935:10017" placeholder="insert into reviews... " />
           </folding>
         </state>
       </provider>
