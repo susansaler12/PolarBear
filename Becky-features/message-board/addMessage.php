@@ -13,7 +13,9 @@
         include('error.php');
     } else {
         // If valid, add the product to the database
-        require_once 'database.php';
+        require_once 'DB_connection.php';
+        //pull data info
+        $db = Dbclass::getDB();
         $sql = 'INSERT INTO messages
                       (event_id, poster_id, subject, content)
                     /* : is only a placeholder */

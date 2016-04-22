@@ -1,5 +1,5 @@
 <?php
-require_once 'dbclass.php';
+require_once 'DB_connection.php';
 
 class MessageDB {
 

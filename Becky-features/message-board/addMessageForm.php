@@ -2,13 +2,21 @@
 session_start();
 
 
-require_once 'database.php';
+require_once 'DB_connection.php';
 
 $id = $_SESSION['id'];
 
-// pull data from database
-//MAKE SURE TO PULL FROM EVENT TABLE INSTEAD
-$sql = "SELECT * FROM messages WHERE poster_id = '$id' ORDER BY event_id ASC, msg_id ASC";
+
+
+//pull data info
+$db = Dbclass::getDB();
+
+
+//Pulling all messages for the the user from message and event table
+$sql = "SELECT DISTINCT e.event_id, e.event_name
+        FROM messages m JOIN events e
+        WHERE $id = e.event_creator
+        ORDER BY e.event_name";
 
 $messages = $db->query($sql);
 
@@ -23,7 +31,7 @@ include '../header.php';
                 <select name="event_id">
                     <option value="" selected>-- Select one --</option>
                     <?php foreach ($messages as $message) : ?>
-                        <option value="<?php echo $message['event_id']; ?>"><?php echo $message['event_id']; ?></option>
+                        <option value="<?php echo $message['event_id']; ?>"><?php echo $message['event_name']; ?></option>
                     <?php endforeach; ?>
                 </select><br/>
                 <input type="hidden" name="poster_id" value="<?php echo $id ?>" />
