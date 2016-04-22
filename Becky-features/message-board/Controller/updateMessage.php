@@ -10,14 +10,14 @@
     // Validate inputs
     if (empty($event_id) || empty($msg_id) ||empty($poster_id) || empty($subject) || empty($content)) {
         $error = "Invalid product data. Check all fields and try again.";
-        include('error.php');
+        include('../View/messageError.php');
     } else {
         // If valid, update the product to the database
-        require_once('messageDB.php');
+        require_once('../Model/messageDB.php');
         $mdb=new MessageDB();
         $mdb->updateMessage($event_id,$msg_id,$poster_id,$subject,$content,$post_date);
 
         // Display the Product List page
-        header('location: index.php');
+        header('location: ../View/messageIndex.php');
     }
 ?>

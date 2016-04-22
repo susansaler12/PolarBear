@@ -2,7 +2,7 @@
 session_start();
 
 
-require_once 'DB_connection.php';
+require_once '../Model/DB_connection.php';
 
 $id = $_SESSION['id'];
 
@@ -20,13 +20,13 @@ $sql = "SELECT DISTINCT e.event_id, e.event_name
 
 $messages = $db->query($sql);
 
-include '../header.php';
+include 'header.php';
 
 ?>
     <main id="main" class="container">
         <section class="section addMessage">
             <h1>Add New Message</h1>
-            <form action="addMessage.php" method="post" >
+            <form action="../Controller/addMessage.php" method="post" >
                 <label>Event:</label>
                 <select name="event_id">
                     <option value="" selected>-- Select one --</option>
@@ -40,9 +40,9 @@ include '../header.php';
                 <label>Content: </label>
                 <textarea class="messageBox" name="content" rows="4" ></textarea><br/>
                 <div class="block">
-                    <input class="btn" type="submit" value="Post Message" />
+                    <a href="messageIndex.php" class="btn btn-default">Cancel</a><input class="btn btn-primary" type="submit" value="Post Message" />
                 </div>
             </form>
         </section>
     </main>
-<?php include '../footer.php' ?>
+<?php include 'footer.php' ?>

@@ -1,4 +1,4 @@
-<?php include '../header.php' ?>
+<?php include 'header.php' ?>
     <main id="main">
         <section class="section error">
             <h1>Message Board</h1>
@@ -9,4 +9,4 @@
             </form>
         </section>
     </main>
-<?php include '../footer.php' ?>
+<?php include 'footer.php' ?>

@@ -10,10 +10,10 @@
     // Validate inputs
     if (empty($event_id) || empty($poster_id) || empty($subject) || empty($content)){
         $error = 'Invalid product data. Check all fields and try again.';
-        include('error.php');
+        include('../View/messageError.php');
     } else {
         // If valid, add the product to the database
-        require_once 'DB_connection.php';
+        require_once '../Model/DB_connection.php';
         //pull data info
         $db = Dbclass::getDB();
         $sql = 'INSERT INTO messages
@@ -34,6 +34,6 @@
         $row = $stm->execute();
 
         // Display the Product List page
-        header('location: index.php');
+        header('location: ../View/messageIndex.php');
     }
 ?>
