@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <title>Create and Update Events</title>
-    <link rel="stylesheet" type="text/css" href="../styles/eventStyle.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-</head>
-<body>
-    <h1>Pending Invites</h1>
 <?php
-include('../Models/DB_connection.php');
-include('../Models/events_DB.php');
-include('../Models/invites_DB.php');
+session_start();
+$loggedIn = $_SESSION['loggedIn'];
 
+if($loggedIn !== true){
+    header("Location:login.php");
+    exit();
+}
+
+include('../Model/DB_connection.php');
+include('../Model/events_DB.php');
+include('../Model/invites_DB.php');
+require_once "header.php";
 
 $tOutput = "<table id='main-display'><thead><th>Event Name</th><th>Description</th><th>Date</th><th>Location</th>><th>Guest of Honor</th></thead>";
 $allEvents = events::getEventsForUser(1);
@@ -25,14 +23,13 @@ foreach($allEvents as $row){
     $tOutput .= "<td>" .$row['event_location']."</td>";
     $tOutput .= "<td><a href='event_details.php?event_id=$row[0]'>EDIT</a> | <a id='delete_row' href='../process_pages/delete_event.php?event_id=$row[0]'>DELETE</a> | <a href='event_invite.php?event_id=$row[0]'>INVITE</a></td></tr>";
 }
-$tOutput .= "</table>";
-echo $tOutput;
-?>
+$tOutput .= "</table>"; ?>
+
+<h1>Pending Invites</h1>
 <h3><a href="event_details.php" id="create_button">Create a New Event</a></h3>
-<?php
+
+<?php echo $tOutput;
 if(isset($_GET['message'])){
     echo "<h2>" . $_GET['message'] . "</h2>";
 }
-?>
-</body>
-</html>
+require_once "footer.php"?>

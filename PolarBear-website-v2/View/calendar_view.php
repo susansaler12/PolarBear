@@ -7,6 +7,7 @@ if($loggedIn !== true){
 }
 require_once "header.php";
 ?>
+    <p><?php if(isset($_GET['message'])){echo $_GET['message'];}?></p>
     <div id="calendar" class="ui-widget container" style=""></div>
     <div id="dark_background">
         <div id="event_details_display">

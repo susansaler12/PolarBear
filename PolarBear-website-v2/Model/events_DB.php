@@ -104,4 +104,15 @@ Class events{
         $id = $result->fetch();
         return $id;
     }
+
+    public static function checkCreator($event_id, $event_creator){
+        $db = DB_connection::getDB();
+        $query = "SELECT * FROM events WHERE event_id = :event_id AND event_creator = :event_creator ";
+        $prepared = $db->prepare($query);
+        $prepared->bindParam(':event_id', $event_id);
+        $prepared->bindParam(':event_creator', $event_creator);
+        $prepared->execute();
+        $rows = $prepared->fetchAll();
+        return $rows;
+    }
 }

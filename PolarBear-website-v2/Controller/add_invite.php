@@ -1,4 +1,10 @@
 <?php
+session_start();
+$loggedIn = $_SESSION['loggedIn'];
+if($loggedIn !== true){
+    header("Location:../View/login.php");
+    exit();
+}
 if(isset($_POST['finished_form'])){
     $invitee = $_POST['invitee'];
     $event_id = $_GET['event_id'];
@@ -16,5 +22,5 @@ if(isset($_POST['finished_form'])){
     include('../Model/invites_DB.php');
 
     $result = invites::invite_guests($event_id, $inviter, $invitee, $invite_priv);
-    header("Location:../View/calendar_view.php");
+    header("Location:../View/event_view.php?event_id=" . $event_id . "&message=Thank you, Invite Sent!");
 }

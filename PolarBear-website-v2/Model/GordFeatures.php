@@ -28,7 +28,7 @@ class GordFeatures{
     }
 
     //search for profiles by name
-    private function searchProfiles($searchText){
+    public static function searchProfiles($searchText){
         $db = DB_connection
             ::getDB();
         if($searchText === null){

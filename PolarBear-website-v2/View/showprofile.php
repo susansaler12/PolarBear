@@ -47,6 +47,7 @@ foreach($result as $p){
     echo GordFeatures::printWishlist($id);
     //This will print the current user's id
     //If you need to do this for other people's profiles this will require other logic
+    ?><span><a href="calendar_view.php">View Events</a><?php
 }
 require_once "footer.php";
 ?>
