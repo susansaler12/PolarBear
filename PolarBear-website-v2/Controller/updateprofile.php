@@ -22,7 +22,7 @@ if (isset ($_POST['uprofile']) && $_POST['uprofile'] == 'Update Profile') {
     $interests = $_POST['interests'];//this is pulling values from the form, local variables
 
     $sql="UPDATE user_profiles
-            SET email = :email, fname = :fname, lname = :lname, image = :image, location = :location, birthday = :birthday, interests = :interests
+            SET email = :email, fname = :fname, lname = :lname, image = :image, location = :location, birthday = :birthday, interests = :interests, full_name = (:fname,' ',:lname)
             WHERE id = :id"; //need to put the variables in single quotes since these are strings if you are inserting variables
     //:name ect is a place holder that we use when we are going to user param statments to prevent sql injection
      //$row = $db->exec($sql); //use when you want to insert update and delete

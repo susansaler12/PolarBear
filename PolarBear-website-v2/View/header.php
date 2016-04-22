@@ -53,7 +53,7 @@
                     <div class="collapse navbar-collapse pull-right" id="mainNavBar">
                         <h2 class="hidden">Main Navigation</h2>
                         <ul class="nav navbar-nav">
-                            <li><a href="index1.php">Home</a></li>
+                            <li><a href="../View/index1.php">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><?php
                                 $loggedIn = $_SESSION['loggedIn'];
@@ -61,10 +61,10 @@
                                 {
                                     echo "<a href='../Controller/logout.php'>Sign Out</a>";
                                 } else {
-                                    echo "<a href='login.php'>Sign In</a>";
+                                    echo "<a href='../View/login.php'>Sign In</a>";
                                 }
                                 ?></li>
-                            <li><a href="#">Wish List</a></li>
+                            <li><a href="../Controller/productController.php">Gallery</a></li>
                         </ul>
                     </div>
                 </nav>

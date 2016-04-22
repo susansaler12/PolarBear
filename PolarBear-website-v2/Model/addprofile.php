@@ -1,4 +1,7 @@
 <?php
+//Hey Gwen! it's Jon. Here's the new sqlquery $sql **xx
+
+
 //WARNING: if you change a single line on this thing it will totally break
 //back it up before you do ANYTHING
 session_start();
@@ -167,9 +170,10 @@ class addimageexception extends exception { }
  */
 //public static function setProfile() {
  //   $db = DB_connection::getDB();
+//**xx
     $sql = "INSERT INTO user_profiles
-            (email, fname, lname, password, location, birthday, interests, image)
-            VALUES (:email, :fname, :lname, :password, :location, :birthday, :interests, :image)"; //need to put the variables in single quotes since these are strings if you are inserting variables
+            (email, fname, lname, password, location, birthday, interests, image, full_name)
+            VALUES (:email, :fname, :lname, :password, :location, :birthday, :interests, :image, concat(:fname,' ',:lname))"; //need to put the variables in single quotes since these are strings if you are inserting variables
     //:name ect is a place holder that we use when we are going to user param statments to prevent sql injection
     // $row = $db->exec($sql); //use when you want to insert update and delete
     //use query statement only when you want to list things from the database
