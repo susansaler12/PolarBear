@@ -66,7 +66,7 @@ if ($action == 'list_products') {
     $productBrand = ProductsDB::getProductsinBrand($brand);
     $categories = ProductsDB::getCategory();
     $brands = ProductsDB::getBrand();
-
+    $ProductList = ProductsDB::getProducts();
 
 
     // Display the product list
