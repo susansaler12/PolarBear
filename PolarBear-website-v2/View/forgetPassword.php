@@ -85,10 +85,10 @@ if(isset($_POST['btnSubmit'])){
                 $ldb->updatePassword($id,$email,$password);
 
                 //message to let user know email sent
-                $summary = "Reset password has been sent to $email";
+                $summary = "<span class='text-success'>Reset password has been sent to $email";
             }
         } else {
-            $summary = "Email not on system";
+            $summary = "<span class='text-danger'>Email not on system</span>";
         }
     }
 
@@ -100,16 +100,23 @@ require_once '../View/header.php';
 ?>
 
 <main id="main">
-    <div class="page-wrapper">
-        <h2>Password reset:</h2>
-        <form action="" method="post">
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email" value="<?php echo $email ?>"/><br/>
-            <span id="emailErr" class="main-form-span"><?php echo $emailErr ?></span><br/>
-            <input type="submit" id="btnSubmit" name="btnSubmit" value="Submit" /><br/><br/>
-            <span>
+    <div class="container">
+        <form action="" method="post" class="col-md-4 col-md-offset-4">
+            <h3>Password reset:</h3>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="text" class="form-control input-lg" id="email" name="email" value="<?php echo $email ?>"/>
+                <span id="emailErr" class="text-danger"><?php echo $emailErr ?></span>
+            </div>
+            <div class="show text-center form-group">
                 <?php echo $summary; ?>
-            </span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="btnSubmit" value="Submit" />
+            </div>
+            <div class="show text-center">
+                <a class="btn" href="login.php">Back to login</a>
+            </div>
         </form>
     </div>
 </main>

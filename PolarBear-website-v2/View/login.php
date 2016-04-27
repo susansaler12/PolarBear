@@ -64,22 +64,27 @@ require_once "../View/header.php";
 ?>
 
 <main id="main">
-    <div class="page-wrapper">
-        <form action="" method="post">
-
-            <label for="email">Email: </label>
-            <input type="text" id="email" name="email" value="<?php echo $email ?>"/><br/>
-            <span id="emailErr" class="main-form-span"><?php echo $emailErr ?></span><br/>
-
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password" value="<?php echo $passwordIn ?>"/><br/>
-            <span id="passwordErr"><?php echo $passwordErr; ?></span><br/>
-
-            <input type="submit" id="btnSubmit" name="btnSubmit" value="Submit" /><br/><br/>
-            <span>
-                <?php echo $errorLogin; ?><br/>
-                <a href="forgetPassword.php">Forget password?</a> | <a href="addprofileform.php">Make an Account</a>
+    <div class="container">
+        <form action="" method="post" class="col-md-4 col-md-offset-4">
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="text" class="form-control input-lg" id="email" name="email" value="<?php echo $email ?>"/>
+                <span id="emailErr" class="text-danger"><?php echo $emailErr ?></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="password" class="form-control input-lg" id="password" name="password" value="<?php echo $passwordIn ?>"/>
+                <span id="passwordErr" class="text-danger"><?php echo $passwordErr; ?></span>
+            </div>
+            <span class="show text-danger text-center form-group">
+                <?php echo $errorLogin; ?>
             </span>
+            <div class="form-group">
+                <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="btnSubmit" value="Submit" />
+            </div>
+            <div class="show text-center">
+                <a class="btn" href="forgetPassword.php">Forget password?</a> | <a class="btn" href="addprofileform.php">Make an Account</a>
+            </div>
         </form>
     </div>
 </main>
