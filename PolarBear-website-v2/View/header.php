@@ -54,17 +54,17 @@
                         <h2 class="hidden">Main Navigation</h2>
                         <ul class="nav navbar-nav">
                             <li><a href="../View/index1.php">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><?php
+                            <li><a href="../Controller/productController.php">Gallery</a></li>
+                            <?php
                                 $loggedIn = isset($_SESSION['loggedIn']) ? $_SESSION['loggedIn'] : false;
                                 if($loggedIn == true)
                                 {
-                                    echo "<a href='../Controller/logout.php'>Sign Out</a>";
+                                    echo "<li><a href='../View/showprofile.php'>Profile</a></li>";
+                                    echo "<li><a href='../Controller/logout.php'>Sign Out</a></li>";
                                 } else {
-                                    echo "<a href='../View/login.php'>Sign In</a>";
+                                    echo "<li><a href='../View/login.php'>Sign In</a></li>";
                                 }
-                                ?></li>
-                            <li><a href="../Controller/productController.php">Gallery</a></li>
+                                ?>
                         </ul>
                     </div>
                 </nav>

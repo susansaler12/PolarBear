@@ -5,12 +5,14 @@ if($loggedIn !== true){
     header("Location:login.php");
     exit();
 }
+
 $id = $_SESSION['id'];
+$friendid = $_GET['friendid'];
 //this is my page for showing 1 profile of a specific user
 require_once "../Model/DB_connection.php";
 
 
-$sql ="SELECT * FROM user_profiles WHERE id = '$id'"; //you dont have to name is query you can name it anything
+$sql ="SELECT * FROM user_profiles WHERE id = '$friendid'"; //you dont have to name is query you can name it anything
 $db = DB_connection::getDB();
 $result = $db->query($sql);
 
@@ -22,18 +24,9 @@ foreach($result as $p){
     echo "<div class='Pname'>" . $p['fname'] . " " . $p['lname'] . "</div>";
     echo "<div class='Pinterests'>" . "Interests:" ." " . $p['interests'] . "</div>";
     echo "<div class='Pimage'>" . $p['image'] . "</div>";
-
-    $fupdate = "<form action ='updateprofileform.php' method='post'>" .
-        "<input type='hidden' name='id' value='" . $p['id'] . "' />".
-        "<input type='submit' name='uprofile' value='UPDATE'/>".
-        "</form>";
-    echo $fupdate . "<div>";
-
-    echo GordFeatures::printWishlist($id);
+    echo GordFeatures::printWishlist($friendid);
     //This will print the current user's id
     //If you need to do this for other people's profiles this will require other logic
-    ?><span><a href="calendar_view.php">View Events</a> | <a href="messageIndex.php">Message Board</a></span><?php
 }
-require_once "addfriendform.php";
 require_once "footer.php";
 ?>

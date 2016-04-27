@@ -1,5 +1,10 @@
 <?php
 session_start();
+$loggedIn = $_SESSION['loggedIn'];
+if($loggedIn !== true){
+    header("Location:login.php");
+    exit();
+}
 
 
 require_once '../Model/DB_connection.php';

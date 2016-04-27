@@ -1,5 +1,10 @@
 <?php
 session_start();
+$loggedIn = $_SESSION['loggedIn'];
+if($loggedIn !== true){
+    header("Location:login.php");
+    exit();
+}
 require_once "../Model/DB_connection.php";
 $id = $_SESSION['id'];// need this to get id value
 
@@ -22,7 +27,6 @@ require_once "header.php";
 
     <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
     Select an image to upload: <input type="file" name="fimg" id="fimg" ><br />
-
     <input type="submit" value="Update Profile" name="uprofile"> <!--it always needs to have a name -->
 </form>
 <?php

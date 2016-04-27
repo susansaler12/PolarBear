@@ -72,7 +72,7 @@ require_once "../View/header.php";
             <span id="emailErr" class="main-form-span"><?php echo $emailErr ?></span><br/>
 
             <label for="password">Password: </label>
-            <input type="text" id="password" name="password" value="<?php echo $passwordIn ?>"/><br/>
+            <input type="password" id="password" name="password" value="<?php echo $passwordIn ?>"/><br/>
             <span id="passwordErr"><?php echo $passwordErr; ?></span><br/>
 
             <input type="submit" id="btnSubmit" name="btnSubmit" value="Submit" /><br/><br/>

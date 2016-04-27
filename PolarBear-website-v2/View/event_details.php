@@ -54,3 +54,4 @@ else{
     <input type="submit" name="finished_form" <?php echo "value='$buttonText'"?>/>
 </form>
 <h3><a href="calendar_view.php" id="back_button"> <<< Back to Events</a></h3>
+<?php require_once "footer.php"?>

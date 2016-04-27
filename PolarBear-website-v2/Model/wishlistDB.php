@@ -33,8 +33,8 @@ public static function getList($product_id,$name){
      {
          $db = DB_connection::getDB();
 
-         $query = "INSERT INTO wishlist (product_id, user_id)
-                   VALUES ($product_id, $user_id)";
+         $query = "INSERT INTO wishlist (id, product_id)
+                   VALUES ($user_id, $product_id)";
 
          $row_count = $db->exec($query);
          return $row_count;

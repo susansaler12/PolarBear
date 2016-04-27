@@ -21,7 +21,7 @@
             <ul class="side-nav">
                 <?php foreach ($brands as $brand) : ?>
                     <li>
-                        <a href="index1.php?brand=<?php echo $brand['brand']; ?>">
+                        <a href="../Controller/productController.php?brand=<?php echo $brand['brand']; ?>">
                             <?php echo $brand['brand']; ?>
                         </a>
                     </li>
@@ -34,7 +34,7 @@
             <ul class="side-nav">
                 <?php foreach ($categories as $category) : ?>
                     <li>
-                        <a href="index1.php?category=<?php echo $category['category']; ?>">
+                        <a href="../Controller/productController.php?category=<?php echo $category['category']; ?>">
                             <?php echo $category['category']; ?>
                         </a>
                     </li>
@@ -55,7 +55,7 @@
                     echo $category->getDescription();
                     echo $category->getBrand();
                     ?>
-                    <form action="wishlist.php" method="post">
+                    <form action="../View/wishlist.php" method="post">
                         <input type="hidden" value="<?php echo $category->getProduct_ID(); ?>" name="product_id"/>
                         <!--<input type="hidden" value="<?php //echo $_SESSION['user_id']; */?><!--" name="user_id"/>-->
                         <input type="hidden" value="<?php /*$category->getName();*/?>" name="name"/>
@@ -71,7 +71,7 @@
                 {
                     echo "<h4><a href=''>". $brand->getName() . "</a></h4>";?>
                     <img src="<?php echo $brand->getImagePath() ?>" class="productimg"/>
-                    <form action="wishlist.php" method="post">
+                    <form action="../View/wishlist.php" method="post">
                         <input type="hidden" value="<?php echo $brand->getProduct_ID(); ?>" name="product_id"/>
                         <input type="submit" name= "finished" value="Add to Wishlist" class="btn"/>
                     </form>
