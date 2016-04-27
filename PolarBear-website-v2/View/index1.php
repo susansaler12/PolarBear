@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require_once "header.php";?>
 
 <main id="main" class="homepage">

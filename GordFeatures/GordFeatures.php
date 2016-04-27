@@ -1,11 +1,12 @@
 <?php
-require_once 'DBConnection.php';
+require_once 'DB_connection.php';
 
 class GordFeatures{
 
     //checks that two users are friends
     private function checkFriends($userOne, $userTwo){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = "select * from friendlist where id = :userOne and idfriend = :userTwo and status = 1";
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':userOne', $userOne, PDO::PARAM_STR, 50);
@@ -28,15 +29,14 @@ class GordFeatures{
 
     //search for profiles by name
     private function searchProfiles($searchText){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         if($searchText === null){
             $users = [];
         }else{
-            $searchLike = '%'.$searchText.'%';
-            $sqlQuery = "select concat(fname,' ',lname) as name, image, location from user_profiles where concat(fname,' ',lname) like :searchLike";
-            //$sqlQuery = "select full_name as name, image, location from user_profiles where match (full_name) against (:searchLike)";
+            $quote = $db->quote($searchText);
+            $sqlQuery = "select id, full_name, image, location from user_profiles where match(full_name) against($quote)";
             $preparedQuery = $db->prepare($sqlQuery);
-            $preparedQuery->bindParam(':searchLike',$searchLike, PDO::PARAM_STR, 101);
             $preparedQuery->execute();
             $preparedQuery->setFetchMode(PDO::FETCH_OBJ);
             $users = $preparedQuery->fetchAll();
@@ -76,19 +76,21 @@ class GordFeatures{
 
     //get user's name from db
     private function getName($profileId){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = 'select full_name from user_profiles where id = :profileId';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':profileId', $profileId, PDO::PARAM_INT, 11);
         $preparedQuery->execute();
         $preparedQuery->setFetchMode(PDO::FETCH_OBJ);
         $profileInfo = $preparedQuery->fetch();
-        return "$profileInfo->f_name $profileInfo->l_name";
+        return $profileInfo->full_name;
     }
 
     //get events a user is attending
     private function getEvents($profileId){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = 'select event_descrip as description, event_date as date from events where event_id in (select event_id from invites where invitee = :profileId and confirmed = 1)';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':profileId', $profileId, PDO::PARAM_INT, 11);
@@ -134,7 +136,8 @@ class GordFeatures{
 
     //get a user's wishlist
     private function getWishlist($profileId){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = 'select name, category, price from products where product_id in (select product_id from wishlist where id = :profileId)';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':profileId', $profileId, PDO::PARAM_INT, 11);
@@ -182,22 +185,25 @@ class GordFeatures{
 
     //returns average rating of a given product
     public static function getAvgRating($productId){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = "select avg(rating) as average from reviews where product_id = :productId";
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':productId', $productId, PDO::PARAM_INT, 11);
         $preparedQuery->execute();
         $preparedQuery->setFetchMode(PDO::FETCH_OBJ);
         $result = $preparedQuery->fetch();
-        if($result === false){
+        $resultFormat = number_format($result->average,1);
+        if($resultFormat === '0.0'){
             return "No reviews";
         }
-        return number_format($result->average,1);
+        return $resultFormat;
     }
 
     //checks whether a user has submit a review for a given product
     private function checkHasReviewed($userId, $productId){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = "select * from reviews where user_id = :userId and product_id = :productId";
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':userId', $userId, PDO::PARAM_INT, 11);
@@ -212,7 +218,8 @@ class GordFeatures{
 
     //gets all reviews for a given product
     private function getReviews($productId){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = 'select * from reviews where product_id = :productId order by post_date';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':productId', $productId, PDO::PARAM_INT, 11);
@@ -246,7 +253,8 @@ class GordFeatures{
 
     //creates new review
     private function createReview($userId, $productId, $rating, $description, $postDate){
-        $db = DBConnection::getDB();
+        $db = DB_connection
+            ::getDB();
         $sqlQuery = 'insert into reviews values (:userId, :productId, :rating, :description, :postDate)';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':userId', $userId, PDO::PARAM_INT, 11);

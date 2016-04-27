@@ -56,7 +56,7 @@
                             <li><a href="../View/index1.php">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><?php
-                                $loggedIn = $_SESSION['loggedIn'];
+                                $loggedIn = isset($_SESSION['loggedIn']) ? $_SESSION['loggedIn'] : false;
                                 if($loggedIn == true)
                                 {
                                     echo "<a href='../Controller/logout.php'>Sign Out</a>";
