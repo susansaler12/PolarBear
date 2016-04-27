@@ -55,6 +55,7 @@ class GordFeatures{
                     <thead>
                         <th>Profile Photo</th>
                         <th>User Info</th>
+                        <th>Invite Friend</th>
                     </thead>
                     <tbody>
             ";
@@ -63,8 +64,14 @@ class GordFeatures{
                     <tr>
                         <td><img src='".$user->image."' alt='Profile photo of ".$user->name."'/></td>
                         <td>
-                            <p>$user->name</p>
+                            <p><a href='../View/showfriendprofile.php?friendid=". $user->id ."'>$user->name</a></p>
                             <p>$user->location</p>
+                        </td>
+                        <td>
+                            <form action='../Model/addfriend.php' method='post'>
+                                <input type='hidden' name='id' value='". $user->id ."'/>
+                                <input type='submit' name='addFriendSubmit' value='Invite'/>
+                            </form>
                         </td>
                     </tr>
                 ";
