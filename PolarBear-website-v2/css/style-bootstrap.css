@@ -71,6 +71,10 @@ img {
     overflow-y: visible;
 	width: 100%;
 }
+/* MAIN PAGE */
+#main {
+    min-height: 400px;
+}
 /*------------ search bar -------------*/
 
 /* search bar */
