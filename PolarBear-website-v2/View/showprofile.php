@@ -10,7 +10,7 @@ $id = $_SESSION['id'];
 require_once "../Model/DB_connection.php";
 
 
-$sql ="SELECT * FROM user_profiles WHERE id = 9"; //you dont have to name is query you can name it anything
+$sql ="SELECT * FROM user_profiles WHERE id = '$id'"; //you dont have to name is query you can name it anything
 $db = DB_connection::getDB();
 $result = $db->query($sql);
 

@@ -11,7 +11,7 @@ $user_profiles = $result->fetch();
 require_once "header.php";
 ?>
 <!--This is the form for entering the new values for the profile-->
-<form action="../Controller/updateprofile.php" method="post">
+<form action="../Controller/updateprofile.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo $user_profiles ['id'];?>"/>
     Email <input type="text" name="email" value="<?php echo $user_profiles['email'];?>"> <br />
     First name<input type="text" name="fname" value="<?php echo $user_profiles['fname'];?>"> <br />
@@ -19,8 +19,10 @@ require_once "header.php";
     Postal code <input type="text" name="location" value="<?php echo $user_profiles['location'];?>"><br />
     Birthday <input type="date" name="birthday" value="<?php echo $user_profiles['birthday'];?>"><br />
     Interests <input type="text" name="interests" value="<?php echo $user_profiles['interests'];?>"><br />
+
     <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
     Select an image to upload: <input type="file" name="fimg" id="fimg" ><br />
+
     <input type="submit" value="Update Profile" name="uprofile"> <!--it always needs to have a name -->
 </form>
 <?php
