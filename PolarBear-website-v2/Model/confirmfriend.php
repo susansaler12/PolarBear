@@ -7,16 +7,19 @@ $db = DB_connection::getDB();
 
 $user = $_SESSION['id'];
 
-//this is the action on the accept friend button click, if button clicked then status is set to 1 in friendlist
-//this means that now the two users are friends
 if (isset ($_POST['confirmfriend']) && $_POST['confirmfriend'] == 'Accept Friend Request') {
-    $sql = "UPDATE friendlist
-    SET status = 1
-    WHERE id = $user";
-    $stm = $db->prepare($sql); //this is called a prepared statement, we are using it instad of the exec statment
+
+    $friender = "SELECT id FROM friendlist WHERE idfriend = '$user' AND status = NULL;";
+   $stm = $db->prepare($friender);
     $stm->execute();
-    //$message = "Inserted " . $row;
-    echo "Friend request accepted";
+    $rows = $stm->fetchAll();
+
+    $confirmed = "UPDATE friendlist
+    SET status = 1
+    WHERE id = '$friender' AND idfriend = '$user';";
+    $statment = $db->prepare($confirmed);
+    $statment->execute();
+    $rows = $statment->fetchAll();
 }
 else{
     echo"a problem has occured, please try again";
