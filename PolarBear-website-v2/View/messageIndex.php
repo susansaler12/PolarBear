@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once "../Controller/session_start.php";
 
 $loggedIn = $_SESSION['loggedIn'];
 if($loggedIn !== true){

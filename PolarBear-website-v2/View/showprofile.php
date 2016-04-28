@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once "../Controller/session_start.php";
 $loggedIn = $_SESSION['loggedIn'];
 if($loggedIn !== true){
     header("Location:login.php");
@@ -16,38 +16,64 @@ $result = $db->query($sql);
 
 require_once "header.php";
 require_once "../Model/GordFeatures.php";
-foreach($result as $p){
 
-    echo "<div class='Pname'>" . $p['fname'] . " " . $p['lname'] . "</div>";
-    echo "<div class='Pinterests'>" . "Interests:" ." " . $p['interests'] . "</div>";
-    echo "<div class='Pimage'>" . $p['image'] . "</div>";
-        /*
-
-        " : " . $p['location'] . " : " . $p['birthday'] .
-        " : " . $p['interests'] . "</div>";
-    $fupdate = "<form action ='updateprofileform.php' method='post'>" .
-        "<input type='hidden' name='id' value='" . $p['id'] . "' />".
-        "<input type='submit' name='uprofile' value='UPDATE'/>".
-        "</form>";
-    echo $fupdate . "<div>";
-    $fdelete = "<form action ='deleteprofile.php' method='post'>" .
-        "<input type='hidden' name='id' value='" . $p['id'] . "' />".
-        "<input type='submit' name='dprofile' value='DELETE'/>".
-        "</form>";
-    echo $fdelete . "<div>";
-        */
-
-    $fupdate = "<form action ='updateprofileform.php' method='post'>" .
-        "<input type='hidden' name='id' value='" . $p['id'] . "' />".
-        "<input type='submit' name='uprofile' value='UPDATE'/>".
-        "</form>";
-    echo $fupdate . "<div>";
-
-    echo GordFeatures::printWishlist($id);
-    //This will print the current user's id
-    //If you need to do this for other people's profiles this will require other logic
-    ?><span><a href="calendar_view.php">View Events</a><?php
-}
-require_once 'searchForm.php';
-require_once "footer.php";
 ?>
+
+    <main id="main" class="container homepage">
+        <div class="row">
+            <!--User profile-->
+            <div class="col-md-4">
+                <div class="columnBox text-center">
+                    <div class="profile">
+                        <?php foreach($result as $p): ?>
+                            <h2><?php echo $p['fname'] . " " . $p['lname'] ?> Profile</h2>
+                            <br/>
+                            <div>Interests: <?php echo $p['interests'] ?></div>
+                            <div>Image: <?php echo $p['image'] ?></div>
+                        <?php endforeach ?>
+                    </div>
+
+                    <?php $fupdate = "<form action ='updateprofileform.php' method='post'>" .
+                        "<input type='hidden' name='id' value='" . $p['id'] . "' />".
+                        "<input type='submit' class='btn btn-info btn-block' name='uprofile' value='UPDATE'/>".
+                        "</form>";
+                    echo $fupdate; ?>
+                </div>
+            </div>
+
+            <!--Wishlist-->
+            <div class="col-md-4">
+                <div class="columnBox">
+                    <?php
+                    echo GordFeatures::printWishlist($id);
+                    //This will print the current user's id
+                    //If you need to do this for other people's profiles this will require other logic
+                    ?>
+                    <a href="calendar_view.php" class='btn btn-info btn-block'>View Events</a>
+                </div>
+            </div>
+
+            <!--search bar-->
+            <div class="col-md-4">
+                <div><?php require_once 'searchForm.php'; ?></div>
+            </div>
+
+
+
+
+
+               <!-- " : " . $p['location'] . " : " . $p['birthday'] .
+                " : " . $p['interests'] . "</div>";
+            $fupdate = "<form action ='updateprofileform.php' method='post'>" .
+                "<input type='hidden' name='id' value='" . $p['id'] . "' />".
+                "<input type='submit' name='uprofile' value='UPDATE'/>".
+                "</form>";
+            echo $fupdate . "<div>";
+            $fdelete = "<form action ='deleteprofile.php' method='post'>" .
+                "<input type='hidden' name='id' value='" . $p['id'] . "' />".
+                "<input type='submit' name='dprofile' value='DELETE'/>".
+                "</form>";
+            echo $fdelete . "<div>";-->
+        </div>
+    </main>
+<?php require_once "footer.php"; ?>

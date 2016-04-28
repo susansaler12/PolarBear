@@ -96,6 +96,39 @@ img {
     min-height: 400px;
 }
 
+/* PROFILE */
+.columnBox {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+}
+#main.homepage .columnBox {
+    display: block;
+    min-height: 250px;
+    position: relative;
+    background-color: white;
+}
+#main.homepage .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#main.homepage h2 {
+     padding-bottom: 20px;
+ }
+
+#main.homepage .row {
+    background-color: #F1F1F1;
+    padding: 30px 15px;
+    border-radius: 10px;
+    position: relative;
+    top: 25px;
+}
+
+#main .profile {
+    padding-bottom: 10px;
+}
+
 /* MESSAGEBOARD */
 #main.messageBoard h2 {
     margin-top: 0;

@@ -159,7 +159,7 @@ class GordFeatures{
     public static function printWishlist($profileId){
         $userName = self::getName($profileId);
         $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
-        $resultString = "<section><h2>$userName's wishlist:</h2>";
+        $resultString = "<section><h2>$userName's wishlist</h2>";
         if(!self::checkFriends($profileId, $userId)  and $userId != $profileId){
             $resultString .= "<p>You must be friends with $userName to view their wishlist.</p>";
             return $resultString;
