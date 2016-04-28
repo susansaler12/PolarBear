@@ -1,4 +1,10 @@
 <?php
+session_start();
+$loggedIn = $_SESSION['loggedIn'];
+if($loggedIn !== true){
+    header("Location:login.php");
+    exit();
+}
 if(isset($_POST['finished_form'])){
     $event_name = $_POST['event_name'];
     $event_descrip = $_POST['event_descrip'];
@@ -10,7 +16,7 @@ if(isset($_POST['finished_form'])){
     include('../Model/DB_connection.php');
     include('../Model/events_DB.php');
     include('../Model/invites_DB.php');
-    $creator = 1; //This will be coming from the login session
+    $creator = $_SESSION['id']; //This will be coming from the login session
 
     if($_POST['surprise_for'] == null or $_POST['surprise_for'] == "off"){
         $surprise_for = 0;
