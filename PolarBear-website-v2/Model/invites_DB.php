@@ -101,13 +101,12 @@ class invites
         try{
             $db = DB_connection::getDB();
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $checkQuery = "SELECT * FROM invites WHERE event_id = :event_id AND invitee = :invitee AND confirmed != 1;";
+            $checkQuery = "SELECT * FROM invites WHERE event_id = :event_id AND invitee = :invitee AND confirmed IS NULL";
             $prepared = $db->prepare($checkQuery);
             $prepared->bindParam(':event_id', $event_id);
             $prepared->bindParam(':invitee', $invitee);
             $prepared->execute();
             $rows = $prepared->fetchAll();
-            var_dump($rows);
             return $rows;
         }
         catch(PDOException $e){
