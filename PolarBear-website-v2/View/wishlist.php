@@ -21,19 +21,9 @@ $user_id = $_SESSION['id'];
 //$names = wishlistDB::getWishlist($name);
 //$name = $wishlist::getWishlist();
 
-$wishlist = new wishlistDB();
-
-$wishlistR = $wishlist->AddWishlist($product_id, $user_id);
+$wishlistR = wishlistDB::AddWishlist($product_id, $user_id);
 $product = productsDB::getProduct($product_id);
-var_dump($product);
-echo $wishlistR;
+
+header("Location:../View/showprofile.php");
 ?>
-
-<!DOCTYPE html>
-<html>
-
-<main>
-
-</main>
-</html>
 

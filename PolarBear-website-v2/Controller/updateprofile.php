@@ -123,18 +123,17 @@ $target_path = "../uploads/";
 $target_path = $target_path .  $_FILES['fimg']['name'];
 $image = $_FILES['fimg']['name'];
 //move the uploaded file from tempe path to taget path
-try {if(move_uploaded_file($_FILES['fimg']['tmp_name'], $target_path)) {
-    throw new addimageexception ("The file ".  $_FILES['fimg']['name'] . " has been uploaded ");
-
-} else{
-    throw new addimageexception ("There was an error uploading the file, please try again!");
+try {
+    if(!move_uploaded_file($_FILES['fimg']['tmp_name'], $target_path)) {
+        throw new addimageexception ("There was an error uploading the file, please try again!");
+    }
 }
-} catch (exception $e) {
+catch (exception $e) {
     echo  $e->getMessage(), "\n";
 }
 
     $sql="UPDATE user_profiles
-            SET email = :email, fname = :fname, lname = :lname, image = :image, location = :location, birthday = :birthday, interests = :interests, full_name = (:fname,' ',:lname)
+            SET email = :email, fname = :fname, lname = :lname, image = :image, location = :location, birthday = :birthday, interests = :interests, full_name = CONCAT(:fname,' ',:lname)
             WHERE id = :id"; //need to put the variables in single quotes since these are strings if you are inserting variables
     //:name ect is a place holder that we use when we are going to user param statments to prevent sql injection
      //$row = $db->exec($sql); //use when you want to insert update and delete
@@ -148,6 +147,7 @@ try {if(move_uploaded_file($_FILES['fimg']['tmp_name'], $target_path)) {
     $stm->bindValue(':location', $location, PDO::PARAM_STR);
     $stm->bindValue(':birthday', $birthday, PDO::PARAM_STR);
     $stm->bindValue(':interests', $interests, PDO::PARAM_STR);
+    $stm->bindValue(':id',$id);
 
 
   //$row=$stm->execute(array(':fname' => $fname, ':lname' => $lname,':password'=> $password, ':image'=>$image, ':location'=> $location, ':birthday'=>$birthday, ':interests'=>$interests ));

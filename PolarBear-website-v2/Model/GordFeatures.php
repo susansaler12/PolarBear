@@ -60,16 +60,17 @@ class GordFeatures{
                     <tbody>
             ";
             foreach($users as $user){
+
                 $returnString .= "
                     <tr>
-                        <td><img src='".$user->image."' alt='Profile photo of ".$user->name."'/></td>
+                        <td><img src='$user->image' alt='Profile photo of $user->full_name'/></td>
                         <td>
-                            <p><a href='../View/showfriendprofile.php?friendid=". $user->id ."'>$user->name</a></p>
+                            <p><a href='../View/showfriendprofile.php?friendid=$user->id'>$user->full_name</a></p>
                             <p>$user->location</p>
                         </td>
                         <td>
                             <form action='../Model/addfriend.php' method='post'>
-                                <input type='hidden' name='id' value='". $user->id ."'/>
+                                <input type='hidden' name='id' value='$user->id'/>
                                 <input type='submit' name='addFriendSubmit' value='Invite'/>
                             </form>
                         </td>

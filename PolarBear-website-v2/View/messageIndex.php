@@ -1,8 +1,11 @@
 <?php
 session_start();
-// connect database
+$loggedIn = $_SESSION['loggedIn'];
+if($loggedIn !== true){
+    header("Location:login.php");
+    exit();
+}
 require_once '../Model/DB_connection.php';
-
 $id = $_SESSION['id'];
 
 //pull data info

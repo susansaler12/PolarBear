@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b8dd3d9-17ca-4a77-be53-48767ad221d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PolarBear-website-v2/Controller/addProductReview.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PolarBear-website-v2/View/productsSidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PolarBear-website-v2/Controller/productController.php" afterPath="$PROJECT_DIR$/PolarBear-website-v2/Controller/productController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PolarBear-website-v2/Model/GordFeatures.php" afterPath="$PROJECT_DIR$/PolarBear-website-v2/Model/GordFeatures.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PolarBear-website-v2/Model/productsDB.php" afterPath="$PROJECT_DIR$/PolarBear-website-v2/Model/productsDB.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PolarBear-website-v2/View/ProductList.php" afterPath="$PROJECT_DIR$/PolarBear-website-v2/View/ProductList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PolarBear-website-v2/View/postReviewForm.php" afterPath="$PROJECT_DIR$/PolarBear-website-v2/View/postReviewForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PolarBear-website-v2/View/productDetails.php" afterPath="$PROJECT_DIR$/PolarBear-website-v2/View/productDetails.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PolarBear-website-v2/View/showprofile.php" afterPath="$PROJECT_DIR$/PolarBear-website-v2/View/showprofile.php" />
-    </list>
+    <list default="true" id="7b8dd3d9-17ca-4a77-be53-48767ad221d1" name="Default" comment="" />
     <ignored path="PBG-Repo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -32,44 +21,38 @@
     <favorites_list name="PBG-Repo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="GordFeatures.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Model/GordFeatures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.56">
-              <caret line="282" column="21" selection-start-line="282" selection-start-column="21" selection-end-line="282" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="283" column="21" selection-start-line="283" selection-start-column="21" selection-end-line="283" selection-end-column="21" />
               <folding>
-                <marker date="1461803518339" expanded="true" signature="229:312" placeholder="select * fro... friendlist" />
-                <marker date="1461803518339" expanded="true" signature="1209:1304" placeholder="select id, f... user_profiles" />
-                <marker date="1461803518339" expanded="true" signature="1856:2091" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="1884:2050" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2078:2091" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2191:2903" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2322:2402" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2322:2403" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2322:2519" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2548:2590" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2548:2700" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2548:2701" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="2548:2877" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="3182:3239" placeholder="select full_... user_profiles" />
-                <marker date="1461803518339" expanded="true" signature="3710:3871" placeholder="select event... " />
-                <marker date="1461803518339" expanded="true" signature="4933:5114" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="4961:5073" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="5101:5114" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="5216:5341" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="5628:5746" placeholder="select name,... products" />
-                <marker date="1461803518339" expanded="true" signature="5692:5745" placeholder="select produ... wishlist" />
-                <marker date="1461803518339" expanded="true" signature="6782:7015" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="6810:6974" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="7002:7015" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="7118:7284" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="7598:7670" placeholder="select avg(r... reviews" />
-                <marker date="1461803518339" expanded="true" signature="8318:8391" placeholder="select * fro... reviews" />
-                <marker date="1461803518339" expanded="true" signature="8933:9003" placeholder="select * fro... reviews" />
-                <marker date="1461803518339" expanded="true" signature="8933:9008" placeholder="select * fro... reviews" />
-                <marker date="1461803518339" expanded="true" signature="9775:10036" placeholder="..." />
-                <marker date="1461803518339" expanded="true" signature="10305:10387" placeholder="insert into reviews... " />
+                <marker date="1461804985235" expanded="true" signature="229:312" placeholder="select * fro... friendlist" />
+                <marker date="1461804985235" expanded="true" signature="1209:1304" placeholder="select id, f... user_profiles" />
+                <marker date="1461804985235" expanded="true" signature="1856:2091" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="1884:2050" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="2078:2091" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="2707:2868" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="2707:2894" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="3173:3230" placeholder="select full_... user_profiles" />
+                <marker date="1461804985235" expanded="true" signature="3701:3862" placeholder="select event... " />
+                <marker date="1461804985235" expanded="true" signature="4924:5105" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="4952:5064" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="5092:5105" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="5207:5332" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="5619:5737" placeholder="select name,... products" />
+                <marker date="1461804985235" expanded="true" signature="5683:5736" placeholder="select produ... wishlist" />
+                <marker date="1461804985235" expanded="true" signature="6773:7006" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="6801:6965" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="6993:7006" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="7109:7275" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="7589:7661" placeholder="select avg(r... reviews" />
+                <marker date="1461804985235" expanded="true" signature="8309:8382" placeholder="select * fro... reviews" />
+                <marker date="1461804985235" expanded="true" signature="8924:8994" placeholder="select * fro... reviews" />
+                <marker date="1461804985235" expanded="true" signature="8924:8999" placeholder="select * fro... reviews" />
+                <marker date="1461804985235" expanded="true" signature="9766:10027" placeholder="..." />
+                <marker date="1461804985235" expanded="true" signature="10296:10378" placeholder="insert into reviews... " />
               </folding>
             </state>
           </provider>
@@ -78,7 +61,7 @@
       <file leaf-file-name="productDetails.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/productDetails.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.04">
+            <state vertical-scroll-proportion="0.0">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="47" />
               <folding />
             </state>
@@ -88,17 +71,17 @@
       <file leaf-file-name="postReviewForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/postReviewForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4259257">
+            <state vertical-scroll-proportion="0.0">
               <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addProductReview.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addProductReview.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Controller/addProductReview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.827957">
+            <state vertical-scroll-proportion="-19.4">
               <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
@@ -108,7 +91,7 @@
       <file leaf-file-name="productsDB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Model/productsDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="51.28">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <marker date="1461800560366" expanded="true" signature="195:217" placeholder="SELECT * FRO... products" />
@@ -127,22 +110,20 @@
       <file leaf-file-name="ProductsClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Model/ProductsClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductList.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductList.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/ProductList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.08">
-              <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.13978495">
+              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
               <folding>
-                <marker date="1461803447438" expanded="true" signature="774:969" placeholder="..." />
-                <marker date="1461803447438" expanded="true" signature="1865:2105" placeholder="..." />
-                <marker date="1461803447438" expanded="true" signature="2731:2934" placeholder="..." />
+                <marker date="1461805261033" expanded="true" signature="4214:4417" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -151,7 +132,7 @@
       <file leaf-file-name="productsSidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/productsSidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.4">
+            <state vertical-scroll-proportion="0.0">
               <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
               <folding />
             </state>
@@ -161,7 +142,7 @@
       <file leaf-file-name="productController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Controller/productController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.12">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding />
             </state>
@@ -190,10 +171,10 @@
         <option value="$PROJECT_DIR$/PolarBear-website-v2/Controller/productController.php" />
         <option value="$PROJECT_DIR$/PolarBear-website-v2/Model/productsDB.php" />
         <option value="$PROJECT_DIR$/PolarBear-website-v2/View/productDetails.php" />
-        <option value="$PROJECT_DIR$/PolarBear-website-v2/View/ProductList.php" />
         <option value="$PROJECT_DIR$/PolarBear-website-v2/Model/GordFeatures.php" />
         <option value="$PROJECT_DIR$/PolarBear-website-v2/View/postReviewForm.php" />
         <option value="$PROJECT_DIR$/PolarBear-website-v2/Controller/addProductReview.php" />
+        <option value="$PROJECT_DIR$/PolarBear-website-v2/View/ProductList.php" />
       </list>
     </option>
   </component>
@@ -385,13 +366,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16944024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -400,6 +380,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -583,32 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461348760331" expanded="true" signature="229:312" placeholder="select * fro... friendlist" />
-            <marker date="1461348760331" expanded="true" signature="1203:1298" placeholder="select id, f... user_profiles" />
-            <marker date="1461348760331" expanded="true" signature="1850:2038" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="1878:1997" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="2025:2038" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="2138:2423" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="2269:2397" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="2702:2759" placeholder="select full_... user_profiles" />
-            <marker date="1461348760331" expanded="true" signature="3230:3391" placeholder="select event... " />
-            <marker date="1461348760331" expanded="true" signature="4453:4634" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="4481:4593" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="4621:4634" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="4736:4861" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="5148:5266" placeholder="select name,... products" />
-            <marker date="1461348760331" expanded="true" signature="5212:5265" placeholder="select produ... wishlist" />
-            <marker date="1461348760331" expanded="true" signature="6302:6535" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="6330:6494" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="6522:6535" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="6638:6804" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="7118:7190" placeholder="select avg(r... reviews" />
-            <marker date="1461348760331" expanded="true" signature="7832:7905" placeholder="select * fro... reviews" />
-            <marker date="1461348760331" expanded="true" signature="8447:8517" placeholder="select * fro... reviews" />
-            <marker date="1461348760331" expanded="true" signature="9307:9568" placeholder="..." />
-            <marker date="1461348760331" expanded="true" signature="9837:9919" placeholder="insert into reviews... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,9 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461775929570" expanded="true" signature="221:365" placeholder="SELECT DISTI... messages" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11469534">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.28">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,11 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65591395">
           <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding>
-            <marker date="1461348760335" expanded="true" signature="153:382" placeholder="SELECT produ... products" />
-            <marker date="1461348760335" expanded="true" signature="566:795" placeholder="SELECT produ... products" />
-            <marker date="1461348760335" expanded="true" signature="1026:1118" placeholder="INSERT INTO wishlist... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,9 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461789098168" expanded="true" signature="124:166" placeholder="SELECT * FRO... user_profiles" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,9 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.28">
           <caret line="106" column="18" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="18" />
-          <folding>
-            <marker date="1461789098164" expanded="true" signature="3962:4189" placeholder="UPDATE user_... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,9 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1461775929575" expanded="true" signature="193:416" placeholder="SELECT e.eve... messages" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.28">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54121864">
           <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45878136">
           <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0609319">
           <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
-          <folding>
-            <marker date="1461793537247" expanded="true" signature="825:902" placeholder="INSERT INTO friendlist... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3154122">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,15 +697,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4014337">
           <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <marker date="1461797901491" expanded="true" signature="264:308" placeholder="SELECT * FRO... user_profiles" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/productsSidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.4">
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
           <folding />
         </state>
@@ -790,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Controller/productController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.12">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
@@ -798,7 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Model/productsDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="51.28">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <marker date="1461800560366" expanded="true" signature="195:217" placeholder="SELECT * FRO... products" />
@@ -821,21 +741,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/ProductList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.08">
-          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-          <folding>
-            <marker date="1461803447438" expanded="true" signature="774:969" placeholder="..." />
-            <marker date="1461803447438" expanded="true" signature="1865:2105" placeholder="..." />
-            <marker date="1461803447438" expanded="true" signature="2731:2934" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/productDetails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.04">
+        <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="47" />
           <folding />
         </state>
@@ -843,47 +751,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Model/GordFeatures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.56">
-          <caret line="282" column="21" selection-start-line="282" selection-start-column="21" selection-end-line="282" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="283" column="21" selection-start-line="283" selection-start-column="21" selection-end-line="283" selection-end-column="21" />
           <folding>
-            <marker date="1461803518339" expanded="true" signature="229:312" placeholder="select * fro... friendlist" />
-            <marker date="1461803518339" expanded="true" signature="1209:1304" placeholder="select id, f... user_profiles" />
-            <marker date="1461803518339" expanded="true" signature="1856:2091" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="1884:2050" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2078:2091" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2191:2903" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2322:2402" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2322:2403" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2322:2519" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2548:2590" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2548:2700" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2548:2701" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="2548:2877" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="3182:3239" placeholder="select full_... user_profiles" />
-            <marker date="1461803518339" expanded="true" signature="3710:3871" placeholder="select event... " />
-            <marker date="1461803518339" expanded="true" signature="4933:5114" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="4961:5073" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="5101:5114" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="5216:5341" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="5628:5746" placeholder="select name,... products" />
-            <marker date="1461803518339" expanded="true" signature="5692:5745" placeholder="select produ... wishlist" />
-            <marker date="1461803518339" expanded="true" signature="6782:7015" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="6810:6974" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="7002:7015" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="7118:7284" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="7598:7670" placeholder="select avg(r... reviews" />
-            <marker date="1461803518339" expanded="true" signature="8318:8391" placeholder="select * fro... reviews" />
-            <marker date="1461803518339" expanded="true" signature="8933:9003" placeholder="select * fro... reviews" />
-            <marker date="1461803518339" expanded="true" signature="8933:9008" placeholder="select * fro... reviews" />
-            <marker date="1461803518339" expanded="true" signature="9775:10036" placeholder="..." />
-            <marker date="1461803518339" expanded="true" signature="10305:10387" placeholder="insert into reviews... " />
+            <marker date="1461804985235" expanded="true" signature="229:312" placeholder="select * fro... friendlist" />
+            <marker date="1461804985235" expanded="true" signature="1209:1304" placeholder="select id, f... user_profiles" />
+            <marker date="1461804985235" expanded="true" signature="1856:2091" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="1884:2050" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="2078:2091" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="2707:2868" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="2707:2894" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="3173:3230" placeholder="select full_... user_profiles" />
+            <marker date="1461804985235" expanded="true" signature="3701:3862" placeholder="select event... " />
+            <marker date="1461804985235" expanded="true" signature="4924:5105" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="4952:5064" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="5092:5105" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="5207:5332" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="5619:5737" placeholder="select name,... products" />
+            <marker date="1461804985235" expanded="true" signature="5683:5736" placeholder="select produ... wishlist" />
+            <marker date="1461804985235" expanded="true" signature="6773:7006" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="6801:6965" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="6993:7006" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="7109:7275" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="7589:7661" placeholder="select avg(r... reviews" />
+            <marker date="1461804985235" expanded="true" signature="8309:8382" placeholder="select * fro... reviews" />
+            <marker date="1461804985235" expanded="true" signature="8924:8994" placeholder="select * fro... reviews" />
+            <marker date="1461804985235" expanded="true" signature="8924:8999" placeholder="select * fro... reviews" />
+            <marker date="1461804985235" expanded="true" signature="9766:10027" placeholder="..." />
+            <marker date="1461804985235" expanded="true" signature="10296:10378" placeholder="insert into reviews... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/postReviewForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4259257">
+        <state vertical-scroll-proportion="0.0">
           <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
           <folding />
         </state>
@@ -891,9 +793,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/Controller/addProductReview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.827957">
+        <state vertical-scroll-proportion="-19.4">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PolarBear-website-v2/View/ProductList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13978495">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+          <folding>
+            <marker date="1461805261033" expanded="true" signature="4214:4417" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
