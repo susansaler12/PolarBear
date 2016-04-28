@@ -25,7 +25,14 @@ require_once "../Model/GordFeatures.php";
 <main id="main" class="container-fluid">
     <div class="col-xs-10 col-md-8 col-lg-6 col-xs-offset-1 col-md-offset-2 col-lg-offset-3">
         <h1 id="event_details_name"><?php echo $results->event_name ?></h1>
-        <h2 style="color:red;"><?php if(isset($_GET['message'])){echo $_GET['message'];}?></h2>
+        <p style="color:red;"><?php
+            if(isset($_GET['message'])){
+                echo $_GET['message'];
+            }
+            elseif(invites::checkConfirmed($id, $event_id)[0] != null){
+                echo "<h2>Your Invite is Unconfirmed!</h2> <a href='../Controller/confirm_invite.php?event_id=$event_id'>CONFIRM</a> | <a href='../Controller/decline_invite.php?event_id=$event_id'>DECLINE</a>";
+            }
+            ?></p>
         <p id="event_details_date"><?php echo $results->event_date ?></p><br/>
         <p id="event_details_location"><?php echo $results->event_location ?></p>
         <p id="event_details_descrip"><?php echo $results->event_descrip ?></p>

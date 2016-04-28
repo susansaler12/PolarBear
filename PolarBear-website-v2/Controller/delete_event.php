@@ -19,5 +19,5 @@ else{
     $result = events::deleteEvent($_GET['event_id']);
 }
 
-header('Location:../Views/index1.php?message=' . $result);
+header('Location:../View/index1.php?message=' . $result);
 exit;

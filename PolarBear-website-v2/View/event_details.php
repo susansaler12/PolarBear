@@ -67,11 +67,11 @@ else{
         <div class="form-group">
             <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="finished_form" <?php echo "value='$buttonText'"?> />
         </div>
-        <hr/><br/>
+        <hr/>
     </form>
     <hr/><br/>
     <div class="col-xs-2 col-xs-offset-2">
-        <a href="calendar_view.php" class="btn btn-info btn-block">Back to Calendar</a>
+        <a href="calendar_view.php">Back to Calendar</a>
     </div>
 </main>
 <?php require_once "footer.php"?>

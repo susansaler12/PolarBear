@@ -20,7 +20,9 @@ if(isset($_POST['finished_form'])){
 
     include('../Model/DB_connection.php');
     include('../Model/invites_DB.php');
-
+    if(invites::check_exists($invitee,$event_id) != 0){
+        header("Location:../View/event_view.php?event_id=" . $event_id . "&message=User is already invited!");
+    }
     $result = invites::invite_guests($event_id, $inviter, $invitee, $invite_priv);
     header("Location:../View/event_view.php?event_id=" . $event_id . "&message=Thank you, Invite Sent!");
 }

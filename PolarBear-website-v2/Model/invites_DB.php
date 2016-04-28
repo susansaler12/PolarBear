@@ -43,6 +43,25 @@ class invites
         }
     }
 
+    public static function check_exists($invitee, $event_id){
+        try{
+            $db = DB_connection::getDB();
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+            $viewInvitesQuery = "SELECT * FROM invites WHERE invitee = :invitee; AND event_id = :event_id";
+            $prepared = $db->prepare($viewInvitesQuery);
+            $prepared->bindParam(':invitee', $invitee);
+            $prepared->bindParam(':event_id', $event_id);
+            $invite = $prepared->execute();
+
+            return mysqli_num_rows($invite);
+        }
+        catch(PDOException $e){
+            return $e->getMessage();
+        }
+    }
+
     public static function confirm_invite($event_id, $invitee){
         try{
             $db = DB_connection::getDB();
@@ -65,15 +84,31 @@ class invites
         try{
             $db = DB_connection::getDB();
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
             $deleteQuery = "DELETE FROM invites WHERE invitee = :invitee AND event_id = :event_id";
             $prepared = $db->prepare($deleteQuery);
             $prepared->bindParam(':invitee', $invitee);
             $prepared->bindParam(':event_id',$event_id);
             $prepared->execute();
-
             return "Invite Deleted";
 
+        }
+        catch(PDOException $e){
+            return $e->getMessage();
+        }
+    }
+
+    public static function checkConfirmed($invitee, $event_id){
+        try{
+            $db = DB_connection::getDB();
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $checkQuery = "SELECT * FROM invites WHERE event_id = :event_id AND invitee = :invitee AND confirmed != 1;";
+            $prepared = $db->prepare($checkQuery);
+            $prepared->bindParam(':event_id', $event_id);
+            $prepared->bindParam(':invitee', $invitee);
+            $prepared->execute();
+            $rows = $prepared->fetchAll();
+            var_dump($rows);
+            return $rows;
         }
         catch(PDOException $e){
             return $e->getMessage();

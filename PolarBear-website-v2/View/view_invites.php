@@ -26,7 +26,6 @@ foreach($allEvents as $row){
 $tOutput .= "</table>"; ?>
 
 <h1>Pending Invites</h1>
-<h3><a href="event_details.php" id="create_button">Create a New Event</a></h3>
 
 <?php echo $tOutput;
 if(isset($_GET['message'])){
