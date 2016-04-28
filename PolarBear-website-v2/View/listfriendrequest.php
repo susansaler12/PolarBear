@@ -6,7 +6,7 @@ require_once "../Model/DB_connection.php";
 
 $db = DB_connection::getDB();
 
-$_SESSION['id'] = 2; //userid I manually put in for testing- delete this before submission
+$_SESSION['id'] = 1; //userid I manually put in for testing- delete this before submission
 
 $user = $_SESSION['id'];
 
@@ -29,24 +29,23 @@ $result->execute();
 foreach($result as $r) {
     echo "<div>" . $r['fname'] . " " . $r['lname'] . "</div>";
 
-    echo "<form method='post'>" . "<input type='submit' value='Confrim Friend' name='confirmfriend'/>" . "</form>";
+    echo "<form method='post'> <input type='submit' value='Confrim Friend' name='confirmfriend'/> </form>";
 
-    echo "<form method='post'>" . "<input type='submit' value='Deny Friend' name='denyfriend'/>" . "</form>";
+    echo "<form method='post'> <input type='submit' value='Deny Friend' name='denyfriend'/> </form>";
 }
 //if the user clicks the confirm friend button then the status should be set to 1
-if (isset ($_REQUEST['confirmfriend']) && $_REQUEST['confirmfriend'] == 'Confirm Friend') {
-    echo "test test";
+if (isset ($_GET['confirmfriend']) && $_GET['confirmfriend'] == 'Confirm Friend') {
+    echo "test confirm";
     $confirmed = "UPDATE friendlist
     SET status = 1
     WHERE id = '$frienderid' AND idfriend = '$user'";
-    $cprepare = $db->prepare($confirmed);
-    $cprepare->execute();
-    $confirmdone = $cprepare->fetch();
+    $cresult = $db->query($confirmed);
+    $cresult->execute();
     echo "friend request has been accepted";
 }
 //if the user denies friend then set the status to 0
-if (isset ($_POST['denyfriend']) && $_POST['denyfriend'] == 'Deny Friend') {
-
+if (isset ($_GET['denyfriend']) && $_GET['denyfriend'] == 'Deny Friend') {
+echo "test deny";
     $denied = "UPDATE friendlist
     SET status = 0
     WHERE id = '$frienderid' AND idfriend = '$user'";
