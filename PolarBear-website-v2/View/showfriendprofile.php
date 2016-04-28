@@ -28,5 +28,6 @@ foreach($result as $p){
     //This will print the current user's id
     //If you need to do this for other people's profiles this will require other logic
 }
+include "listfriendrequest.php";
 require_once "footer.php";
 ?>
