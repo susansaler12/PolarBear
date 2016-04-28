@@ -98,6 +98,6 @@ else if ($action == 'product_add') {
 }
 
 
-include ('../View/footer.php');
+require_once ('../View/footer.php');
 
 ?>
