@@ -3,10 +3,10 @@ session_start();
 
 include ('../View/header.php');
 
-require('../Model/ProductsClass.php');
-require('../Model/productsDB.php');
-require('../Model/DB_connection.php');
-require('../Model/GordFeatures.php');
+require_once('../Model/ProductsClass.php');
+require_once('../Model/productsDB.php');
+require_once('../Model/DB_connection.php');
+require_once('../Model/GordFeatures.php');
 
 //include ('results1.php');
 
@@ -64,8 +64,6 @@ if ($action == 'list_products') {
 
     $productCat = ProductsDB::getProductsinCat($category);
     $productBrand = ProductsDB::getProductsinBrand($brand);
-    $categories = ProductsDB::getCategory();
-    $brands = ProductsDB::getBrand();
     $ProductList = ProductsDB::getProducts();
 
 

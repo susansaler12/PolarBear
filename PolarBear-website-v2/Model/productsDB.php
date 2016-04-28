@@ -1,4 +1,7 @@
 <?php
+require_once 'DB_connection.php';
+require_once 'ProductsClass.php';
+
 class productsDB {
     public static function getProducts()
     {
@@ -122,6 +125,9 @@ class productsDB {
     $sql->execute();
 
     $result = $sql->fetch();
+    if($result === false){
+        return false;
+    }
 
     $product = new Product(
         $result->product_id,

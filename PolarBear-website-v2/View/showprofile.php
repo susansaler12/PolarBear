@@ -14,7 +14,6 @@ $sql ="SELECT * FROM user_profiles WHERE id = '$id'"; //you dont have to name is
 $db = DB_connection::getDB();
 $result = $db->query($sql);
 
-
 require_once "header.php";
 require_once "../Model/GordFeatures.php";
 foreach($result as $p){
@@ -49,5 +48,6 @@ foreach($result as $p){
     //If you need to do this for other people's profiles this will require other logic
     ?><span><a href="calendar_view.php">View Events</a><?php
 }
+require_once 'searchForm.php';
 require_once "footer.php";
 ?>

@@ -208,7 +208,7 @@ class GordFeatures{
     }
 
     //checks whether a user has submit a review for a given product
-    private function checkHasReviewed($userId, $productId){
+    public static function checkHasReviewed($userId, $productId){
         $db = DB_connection
             ::getDB();
         $sqlQuery = "select * from reviews where user_id = :userId and product_id = :productId";
@@ -227,7 +227,7 @@ class GordFeatures{
     private function getReviews($productId){
         $db = DB_connection
             ::getDB();
-        $sqlQuery = 'select * from reviews where product_id = :productId order by post_date';
+        $sqlQuery = 'select * from reviews where product_id = :productId order by post_date desc';
         $preparedQuery = $db->prepare($sqlQuery);
         $preparedQuery->bindParam(':productId', $productId, PDO::PARAM_INT, 11);
         $preparedQuery->execute();
@@ -239,7 +239,7 @@ class GordFeatures{
     //prints reviews of a given product
     public static function printReviews($productId){
         $reviews = self::getReviews($productId);
-        $resultString = "<h2>Product Reviews<h2>";
+        $resultString = '';
         if(count($reviews) === 0){
             $resultString .= "<p>This product has not yet been reviewed.</p>";
         }else{
@@ -273,15 +273,13 @@ class GordFeatures{
     }
 
     //takes post data and creates new review
-    public static function postReview($productId){
-        $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
-        $rating = $_POST['reviewSelect'];
-        $description = htmlspecialchars(trim($_POST['reviewText']));
+    public static function postReview($userId, $productId, $rating, $comment){
         if($rating !== ''){
             $now = new DateTime();
             $postDate = $now->format('Y-m-d H:i:s');
             // figure out time zone
-            self::createReview($userId, $productId, $rating, $description, $postDate);
+            return self::createReview($userId, $productId, $rating, $comment, $postDate);
         }
+        return false;
     }
 }
