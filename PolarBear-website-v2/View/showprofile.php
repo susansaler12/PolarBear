@@ -34,6 +34,6 @@ foreach($result as $p){
     //If you need to do this for other people's profiles this will require other logic
     ?><span><a href="calendar_view.php">View Events</a> | <a href="messageIndex.php">Message Board</a></span><?php
 }
-require_once "addfriendform.php";
+require_once "searchForm.php";
 require_once "footer.php";
 ?>

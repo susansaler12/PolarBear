@@ -21,9 +21,20 @@ html {
     /* height: 132px; */
     position: relative;
 }
+h1{
+    font:3rem Calibri, sans-serif;
+    color:#3D5177;
+}
+p{
+    font:1.75rem Calibri, sans-serif;
+    margin-bottom:0px;
+}
 img {
     width: 100%;
  }
+#form-checkbox{
+    margin-left:10px;
+}
  
 /*-------------------- header -----------------------*/
 #header {

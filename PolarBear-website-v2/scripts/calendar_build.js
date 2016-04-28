@@ -21,8 +21,6 @@ function buildCalendar(eventData) {
     }
     $('#calendar').fullCalendar({
         theme: true,
-        //eventMouseover: eventHover,
-        //eventMouseout: eventOff,
         eventRender: addDescrip,
         eventClick: eventDetails,
         dayClick: newEventPrompt,
@@ -64,12 +62,11 @@ function buildCalendar(eventData) {
 
     function showDetails(eventIn) {
         var thisEvent = eventData[eventIn.id];
-        console.log(thisEvent);
         $('#event_details_name').html(thisEvent.event_name);
         $('#event_details_date').html("Date: " + thisEvent.event_date);
         $('#event_details_descrip').html(thisEvent.event_descrip);
         $('#event_details_location').html("Location: " + thisEvent.event_location);
-        if(thisEvent.guest_of_honor != null){
+        if(thisEvent.guest_of_honor != null && thisEvent.guest_of_honor != ''){
             $('#event_details_goh').html('Guest of Honor: ' + thisEvent.guest_of_honor);
         }
         if(thisEvent.surprise_for == 1) {
@@ -78,9 +75,7 @@ function buildCalendar(eventData) {
         else{
             $('#surprise_party').css('display','none');
         }
-        console.log(thisEvent);
         $('#view_link').attr('href', 'event_view.php?event_id=' + thisEvent.event_id);
-        //*** CURRENTLY HERE - BEST WAY TO GET THE DATA TO POPULATE THIS BOX ***
     }
 
     function newEventPrompt(date, jsEvent, View) {

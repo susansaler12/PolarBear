@@ -7,8 +7,8 @@ if($loggedIn !== true){
 }
 require_once "header.php";
 ?>
-    <p><?php if(isset($_GET['message'])){echo $_GET['message'];}?></p>
-    <div id="calendar" class="ui-widget container" style=""></div>
+    <p style="margin-left:20px;"><?php if(isset($_GET['message'])){echo $_GET['message'];}?></p>
+    <div id="calendar" class="ui-widget container-fluid"></div>
     <div id="dark_background">
         <div id="event_details_display">
             <h2 id="event_details_name"></h2>
@@ -25,8 +25,7 @@ include('../Model/DB_connection.php');
 include('../Model/invites_DB.php');
 include('../Model/events_DB.php');
 
-//$loggedIn = $_SESSION['id'];
-$loggedIn = 1;
+$loggedIn = $_SESSION['id'];
 $events = events::getEventsForUser($loggedIn);
 $eventsJSON = json_encode($events);
 echo "<script>buildCalendar($eventsJSON)</script>";
