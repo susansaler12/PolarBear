@@ -1,4 +1,4 @@
-
+<hr/>
 <footer id="footer">
     <div class="footer-panel">
         <div class="container">

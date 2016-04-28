@@ -60,6 +60,7 @@
                                 if($loggedIn == true)
                                 {
                                     echo "<li><a href='../View/showprofile.php'>Profile</a></li>";
+                                    echo "<li><a href='../View/messageIndex.php'>Message</a></li>";
                                     echo "<li><a href='../Controller/logout.php'>Sign Out</a></li>";
                                 } else {
                                     echo "<li><a href='../View/login.php'>Sign In</a></li>";
