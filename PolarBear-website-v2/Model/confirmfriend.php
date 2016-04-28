@@ -10,7 +10,7 @@ $user = $_SESSION['id'];
 if (isset ($_POST['confirmfriend']) && $_POST['confirmfriend'] == 'Accept Friend Request') {
 
     $friender = "SELECT id FROM friendlist WHERE idfriend = '$user' AND status = NULL;";
-   $stm = $db->prepare($friender);
+    $stm = $db->prepare($friender);
     $stm->execute();
     $rows = $stm->fetchAll();
 
