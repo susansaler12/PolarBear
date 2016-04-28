@@ -99,26 +99,22 @@ require_once '../View/header.php';
 //var_dump($_SESSION['loggedIn']);
 ?>
 
-<main id="main">
-    <div class="container">
-        <form action="" method="post" class="col-md-4 col-md-offset-4">
-            <h3>Password reset:</h3>
-            <div class="form-group">
-                <label for="email">Email: </label>
-                <input type="text" class="form-control input-lg" id="email" name="email" value="<?php echo $email ?>"/>
-                <span id="emailErr" class="text-danger"><?php echo $emailErr ?></span>
-            </div>
-            <div class="show text-center form-group">
-                <?php echo $summary; ?>
-            </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="btnSubmit" value="Submit" />
-            </div>
-            <div class="show text-center">
-                <a class="btn" href="login.php">Back to login</a>
-            </div>
-        </form>
-    </div>
+<main id="main" class="container">
+    <form action="" method="post" class="col-md-4 col-md-offset-4">
+        <h1>Password reset</h1>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="text" class="form-control input-lg" id="email" name="email" value="<?php echo $email ?>"/>
+            <span id="emailErr" class="text-danger"><?php echo $emailErr ?></span>
+        </div>
+        <div class="show text-center form-group">
+            <?php echo $summary; ?>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="btnSubmit" value="Submit" />
+            <a class="btn btn-default btn-block" href="login.php">Back to login</a>
+        </div>
+    </form>
 </main>
 
 <?php require_once '../View/footer.php' ?>
