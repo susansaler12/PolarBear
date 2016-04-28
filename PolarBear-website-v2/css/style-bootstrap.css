@@ -24,15 +24,9 @@ html {
     /* height: 132px; */
     position: relative;
 }
-h1, h2, h3, h4{
-     font-family: Calibri, sans-serif;
-     color:#3D5177;
- }
 h1{
-    font-size:3rem;
-}
-h2{
-    font-size:2.5rem;
+    font:3rem Calibri, sans-serif;
+    color:#3D5177;
 }
 p{
     font:1.75rem Calibri, sans-serif;
