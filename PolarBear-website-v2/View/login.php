@@ -80,7 +80,7 @@ require_once "../View/header.php";
             <?php echo $errorLogin; ?>
         </span>
         <div class="form-group">
-            <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="btnSubmit" value="Submit" />
+            <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="btnSubmit" value="Login" />
         </div>
         <div class="show text-center">
             <a class="btn" href="forgetPassword.php">Forget password?</a> | <a class="btn" href="addprofileform.php">Make an Account</a>

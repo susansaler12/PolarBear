@@ -36,13 +36,16 @@ h2{
 }
 p{
     font:1.75rem Calibri, sans-serif;
-    margin-bottom:0px;
+    margin-bottom:0;
 }
 img {
     width: 100%;
  }
 #form-checkbox{
     margin-left:10px;
+}
+ul{
+    list-style: none;
 }
  
 /*-------------------- header -----------------------*/
@@ -144,13 +147,13 @@ img {
 
 /* search bar */
 #main.homepage .navbar-form .input-group > .form-control {
-    width: 93%;
+    width: 90%;
 	border-radius: 0;
 }
 /* search bar button position */
 #main.homepage .input-group-btn{	  
-	position: absolute;
-	right: 0;
+	position: relative;
+	right: 8%;
 }
 /* search bar button coloring */
 #main.homepage .btn.btn-default {
@@ -158,7 +161,7 @@ img {
 	color: white;
 	border-radius: 0;
 }
-/* #main.homepage #search {
+ #main.homepage #search {
     padding: 0 1em;
     text-align: center;
 }
@@ -180,7 +183,7 @@ img {
     background-color: lightskyblue;
     color: #325075;
     cursor: pointer;
-} */
+}
 /*-----------------------FOOTER-----------------------*/
 #footer ul{
     list-style: none;

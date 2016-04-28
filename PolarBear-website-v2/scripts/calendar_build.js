@@ -55,7 +55,6 @@ function buildCalendar(eventData) {
                 $('#dark_background').hide();
                 $('#event_details_display').hide();
             }
-
         });
         showDetails(event);
     }
@@ -76,13 +75,24 @@ function buildCalendar(eventData) {
             $('#surprise_party').css('display','none');
         }
         $('#view_link').attr('href', 'event_view.php?event_id=' + thisEvent.event_id);
+        $('#view_link').html("View Event");
     }
 
     function newEventPrompt(date, jsEvent, View) {
-        var newEv = confirm("Would you like to create a new event for " + date.format() + "?");
-        if (newEv) {
-            window.location.href = "event_details.php?new_date=" + date.format();
-        }
+        $('#dark_background').show();
+        var detDisplay = $('#event_details_display');
+        detDisplay.show();
+        detDisplay.css({
+            'margin-left': -detDisplay.width(),
+            'margin-top': -(detDisplay.height() / 2 + 50)
+        });
+        $('#dark_background').click(function (e) {
+            if ($(e.target).is('#dark_background')) {
+                $('#dark_background').hide();
+                $('#event_details_display').hide();
+            }
+        });
+        $('#view_link').attr('href', 'event_details.php?new_date=' + date.format());
+        $('#view_link').html("Create a New Event?");
     }
-
 }

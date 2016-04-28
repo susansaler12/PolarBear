@@ -37,7 +37,7 @@ require_once 'header.php';
 ?>
 
 
-    <main id="main" class="container messageBoard">
+    <main id="main" class="container-fluid messageBoard">
         <div class="row">
             <h1>Message Board</h1>
             <?php if($isUpdate) : ?>
