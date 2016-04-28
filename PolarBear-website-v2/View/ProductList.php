@@ -24,7 +24,7 @@ require_once '../View/header.php';
                         <input type="hidden" value="<?php /*$category->getName();*/?>" name="name"/>
                         <input type="submit" name= "finished" value="Add to Wishlist" class="btn  pull-right"/>
                     </form>
-                    <span><?php echo GordFeatures::getAvgRating($category->getProduct_ID());?></span>
+                    <span>Avg. Rating: <?php echo GordFeatures::getAvgRating($category->getProduct_ID());?></span>
                     <?php echo "<p>$" . $category->getPrice() . "</p></div>";
                     }
                     }
@@ -42,7 +42,7 @@ require_once '../View/header.php';
                             <input type="hidden" value="<?php echo $brand->getProduct_ID(); ?>" name="product_id"/>
                             <input type="submit" name= "finished" value="Add to Wishlist" class="btn  pull-right"/>
                         </form>
-                        <span><?php echo GordFeatures::getAvgRating($brand->getProduct_ID());?></span>
+                        <span>Avg. Rating: <?php echo GordFeatures::getAvgRating($brand->getProduct_ID());?></span>
                         <?php
                         echo "<p>$" . $brand->getPrice() . "</p></div>";
                         }
@@ -60,7 +60,7 @@ require_once '../View/header.php';
                                 <input type="hidden" value="<?php /*$product['name'];*/?>" name="name"/>
                                 <input type="submit" name= "finished" value="Add to Wishlist" class="btn  pull-right"/>
                             </form>
-                            <span><?php echo GordFeatures::getAvgRating($product->getProduct_ID());?></span>
+                            <span>Avg. Rating: <?php echo GordFeatures::getAvgRating($product->getProduct_ID());?></span>
                             <?php echo "<p>$" . $product->getPrice() . "</p></div>";
                             }
                             } ?>

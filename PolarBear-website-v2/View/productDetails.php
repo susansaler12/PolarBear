@@ -49,3 +49,4 @@ require_once '../View/productsSidebar.php';
         ?>
     </div>
 </div>
+<?php require_once '../View/footer.php';
