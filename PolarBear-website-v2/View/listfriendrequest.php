@@ -11,11 +11,13 @@ $_SESSION['id'] = 2; //userid I manually put in for testing- delete this before 
 $user = $_SESSION['id'];
 
 //get the id of the person who sent the friend request
-$friender = "SELECT id FROM user_profiles u INNER JOIN friendlist f ON u.id = f.id
+$friender = "SELECT u.id FROM user_profiles u INNER JOIN friendlist f ON u.id = f.id
 WHERE f.idfriend = '$user' AND f.status IS NULL;";
 $prepared = $db->prepare($friender);
 $prepared->execute();
 $frienderid = $prepared->fetch();
+
+//var_dump($frienderid);
 
 //get all of the information of the person who sent the friend request
 $listrequest = "SELECT * FROM user_profiles u INNER JOIN friendlist f ON u.id = f.id
@@ -23,28 +25,23 @@ WHERE f.idfriend = '$user' AND f.status IS NULL;";
 $result = $db->query($listrequest);
 $result->execute();
 
-//make form with button and have a hidden field that grabs the id of the friender
+//forms with buttons for confrim or deny friend
 foreach($result as $r) {
     echo "<div>" . $r['fname'] . " " . $r['lname'] . "</div>";
 
-    echo "<form method='post'>";
-    echo " <input type='hidden' name='id' value='$frienderid'/>";
-    echo "<input type='submit' value='Confrim Friend' name='confirmfriend'/>";
-    echo "</form>";
+    echo "<form method='post'>" . "<input type='submit' value='Confrim Friend' name='confirmfriend'/>" . "</form>";
 
-    echo "<form method='post'>";
-    echo " <input type='hidden' name='id' value='$frienderid'/>";
-    echo "<input type='submit' value='Deny Friend' name='denyfriend'/>";
-    echo "</form>";
+    echo "<form method='post'>" . "<input type='submit' value='Deny Friend' name='denyfriend'/>" . "</form>";
 }
 //if the user clicks the confirm friend button then the status should be set to 1
-if (isset ($_POST['confirmfriend']) && $_POST['confirmfriend'] == 'Confirm Friend') {
-
-    $confrimed = "UPDATE friendlist
+if (isset ($_REQUEST['confirmfriend']) && $_REQUEST['confirmfriend'] == 'Confirm Friend') {
+    echo "test test";
+    $confirmed = "UPDATE friendlist
     SET status = 1
     WHERE id = '$frienderid' AND idfriend = '$user'";
-    $cresult = $db->query($confrimed);
-    $cresult->execute();
+    $cprepare = $db->prepare($confirmed);
+    $cprepare->execute();
+    $confirmdone = $cprepare->fetch();
     echo "friend request has been accepted";
 }
 //if the user denies friend then set the status to 0
