@@ -24,9 +24,13 @@ html {
     /* height: 132px; */
     position: relative;
 }
+h1, h2, h3, h4{
+     font-family: Calibri, sans-serif;
+     color:#3D5177;
+ }
 h1{
-    font:3rem Calibri, sans-serif;
-    color:#3D5177;
+    font-size:3rem;
+}
 h2{
     font-size:2.5rem;
 }
@@ -92,7 +96,6 @@ img {
     min-height: 400px;
 }
 
-<<<<<<< HEAD
 /* PROFILE */
 .columnBox {
     display: inline-block;
@@ -126,8 +129,6 @@ img {
     padding-bottom: 10px;
 }
 
-=======
->>>>>>> 5bac0fc9f731ea1661a0426faabfa00bde2b68a3
 /* MESSAGEBOARD */
 #main.messageBoard h2 {
     margin-top: 0;
@@ -273,6 +274,7 @@ img {
     }
 }
 
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
 	/* column of 5 */
@@ -283,6 +285,7 @@ img {
 
 /* Medium devices (desktops, 992px and up)
 @media (min-width:@screen-md-min) {
+
 }*/
 
 /* Large devices (large desktops, 1200px and up)
