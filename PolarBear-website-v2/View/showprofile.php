@@ -53,13 +53,18 @@ require_once "../Model/GordFeatures.php";
                 </div>
             </div>
 
+
             <!--search bar-->
             <div class="col-md-4">
                 <div><?php require_once 'searchForm.php'; ?></div>
             </div>
 
 
-
+            <div class="col-md">
+                <div class="row">
+                    <a href="listfriendrequest.php" class='btn btn-info btn-block'>View Friend Requests</a>
+                </div>
+            </div>
 
 
                <!-- " : " . $p['location'] . " : " . $p['birthday'] .
