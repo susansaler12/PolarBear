@@ -124,12 +124,23 @@ ul{
     background-color: #F1F1F1;
     padding: 30px 15px;
     border-radius: 10px;
+}
+
+#main.homepage .profileWrapper {
     position: relative;
     top: 25px;
 }
 
 #main .profile {
     padding-bottom: 10px;
+}
+#main .viewFriend {
+    padding: 0 30px !important;
+}
+#main .viewFriend .btn {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
 }
 
 /* MESSAGEBOARD */

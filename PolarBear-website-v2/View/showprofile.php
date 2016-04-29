@@ -20,7 +20,7 @@ require_once "../Model/GordFeatures.php";
 ?>
 
     <main id="main" class="container homepage">
-        <div class="row">
+        <div class="row profileWrapper">
             <!--User profile-->
             <div class="col-md-4">
                 <div class="columnBox text-center">
@@ -59,13 +59,9 @@ require_once "../Model/GordFeatures.php";
                 <div><?php require_once 'searchForm.php'; ?></div>
             </div>
 
-
-            <div class="col-md">
-                <div class="row">
-                    <a href="listfriendrequest.php" class='btn btn-info btn-block'>View Friend Requests</a>
-                </div>
+            <div class="row viewFriend">
+                <a href="listfriendrequest.php" class='btn btn-info'>View Friend Requests</a>
             </div>
-
 
                <!-- " : " . $p['location'] . " : " . $p['birthday'] .
                 " : " . $p['interests'] . "</div>";
