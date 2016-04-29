@@ -19,21 +19,26 @@ $message = $results->fetch();
 ?>
 <?php include 'header.php' ?>
 <main id="main" class="container">
-    <section class="section addMessage">
+    <form action="../Controller/updateMessage.php" method="post" class="col-md-6 col-md-offset-3">
         <h1>Message Board</h1>
-        <form action="../Controller/updateMessage.php" method="post">
-            <input type="hidden" name="msg_id" value="<?php echo $msg_id; ?>" /><br/>
+        <input type="hidden" name="msg_id" value="<?php echo $msg_id; ?>" />
+        <div class="form-group">
             <label>Event:</label>
-            <input disabled type="input" name="event_name" value="<?php echo $message['event_name']; ?>" /><br/>
+            <input disabled class="form-control" type="input" name="event_name" value="<?php echo $message['event_name']; ?>" />
+        </div>
+        <div class="form-group">
             <label>Subject: </label>
-            <input type="input" name="subject" value="<?php echo $message['subject']; ?>" /><br/>
+            <input class="form-control" type="input" name="subject" value="<?php echo $message['subject']; ?>" />
+        </div>
+        <div class="form-group">
             <label>Content: </label>
-            <textarea class="messageBox" name="content" rows="4" cols="50" ><?php echo $message['content']; ?></textarea><br/>
-            <div class="block">
-                <a href="messageIndex.php" class="btn btn-default">Cancel</a><input class="btn btn-primary" type="submit" value="Post Message" />
-            </div>
-        </form>
-    </section>
+            <textarea class="messageBox form-control" name="content" rows="4" cols="50" ><?php echo $message['content']; ?></textarea>
+        </div>
+        <div class="form-group">
+            <input class="btn btn-info btn-block" type="submit" value="Post Message" />
+            <a href="messageIndex.php" class="btn btn-default btn-block">Cancel</a>
+        </div>
+    </form>
 </main>
 <?php include 'footer.php' ?>
 
