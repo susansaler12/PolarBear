@@ -58,6 +58,74 @@ ul{
 #header .navbar-brand {
 	height: auto;
 }
+/*-------------------Carousel-------------------------*/
+
+.carousel-inner{
+    height: 370px;
+}
+.cGiousel-caption h2 {
+    margin: 0 auto;
+    margin-left: 22rem;
+    position: relative;
+    bottom: 27rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 33px;
+}
+.cGiousel-caption h2 span{
+    font-family: 'Lobster Two', cursive;
+    font-size: 60px;
+    font-style: italic;
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+#banner1 h2{
+    color: white;
+    width: 20%;
+    font-size: 25px;
+}
+#banner1 a{
+    position: relative;
+    margin: 0;
+    bottom: 22rem;
+    display: inline-block;
+    margin-left: 20%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.4em;
+    border-radius: 11px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#banner3 h2{
+    padding: 0;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+#banner3 a {
+     margin: 0 auto;
+     text-align: center;
+     display: inline-block;
+     position: relative;
+     bottom: 9em;
+     left: 45%;
+     padding: 0.4em;
+    background-color: transparent;
+     color: white;
+     border: 2px solid white;
+     border-radius: 11px;
+    font-size: 25px;
+    cursor: pointer;
+ }
+#banner3 a:hover, #banner1 a:hover{
+    text-decoration: none;
+    background-color: rgba(255,255,255, 0.5);
+    color: black;
+}
 /*------------------ Navigation ---------------------*/
 #mainNav .nav {
 	position: relative;

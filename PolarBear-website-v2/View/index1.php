@@ -17,21 +17,30 @@ require_once "header.php";?>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="../images/banner.png" />
-                <!-- <button class="carousel-caption">
-                    Check this out.
-                </button> -->
+                 <div class="cGiousel-caption">
+                     <h2>Welcome to <span><br />Polar Bear Gift</span></h2>
+                </div>
             </div>
             <div class="item">
                 <img src='../images/banner1.png' />
+                <div class="cGiousel-caption" id="banner1">
+                    <h2>Create a Profile and Connect with other Party Friends!</h2>
+                    <a href='../View/addprofileform.php'>Create a Profile</a></h3>
+<!--                    <h3 class="btn-default">Create a Profile</h3>-->
+                </div>
             </div>
             <div class="item">
                 <img src="../images/banner2.png" />
             </div>
             <div class="item">
                 <img src="../images/banner3.png" />
+                <div class="cGiousel-caption" id="banner3">
+                   <h2>Browse Through our Product Gallery</h2>
+                    <a href='../Controller/productController.php'>Browse Gallery</a>
+                </div>
             </div>
         </div>
-        <!-- Left and right controls CAROSAL -->
+        <!-- Left and right controls CAROUSAL -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
