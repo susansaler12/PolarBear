@@ -20,6 +20,7 @@ WHERE f.idfriend = '$user' AND f.status IS NULL;";
 $prepared = $db->prepare($friender);
 $prepared->execute();
 $frienderid['id'] = $prepared->fetch();
+if (($prepared->fetch()) != null) {
 foreach($frienderid['id'] as $key=>$frienderkey) { $$key = $frienderkey; }
 
 //var_dump($frienderkey);
@@ -56,7 +57,10 @@ if (isset ($_POST['denyfriend']) && $_POST['denyfriend'] == 'Deny Friend') {
     $dresult->execute();
     echo "friend request has been denied";
 }
-
+}
+else{
+    echo "You don't have any friend requests pending.";
+}
 //on submit make make an isset so that friendlist will be updated where the id of the user and friender are
 
 require_once "footer.php";
