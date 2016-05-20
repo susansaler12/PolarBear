@@ -51,7 +51,7 @@ class GordFeatures{
             return "<p>No users found.</p>";
         }else{
             $returnString = "
-                <table>
+                <table class='table table-striped'>
                     <thead>
                         <th>Profile Photo</th>
                         <th>User Info</th>
@@ -169,11 +169,10 @@ class GordFeatures{
             $resultString .= "<p>$userName has no items on their wishlist.</p>";
         }else{
             $resultString .= "
-                <table>
+                <table class='table table-striped'>
                     <thead>
                         <th>Product Name</th>
                         <th>Product Category</th>
-                        <th>Price</th>
                     </thead>
                     <tbody>
             ";
@@ -182,7 +181,6 @@ class GordFeatures{
                     <tr>
                         <td>$item->name</td>
                         <td>$item->category</td>
-                        <td>$item->price</td>
                     </tr>
                 ";
             }

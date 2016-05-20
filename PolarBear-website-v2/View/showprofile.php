@@ -19,7 +19,7 @@ require_once "../Model/GordFeatures.php";
 
 ?>
 
-    <main id="main" class="container homepage">
+    <main id="main" class="container showprofile">
         <div class="row profileWrapper">
             <!--User profile-->
             <div class="col-md-4">
@@ -32,13 +32,13 @@ require_once "../Model/GordFeatures.php";
                             <div>Image: <?php echo $p['image'] ?></div>
                         <?php endforeach ?>
                     </div>
-
-                    <?php $fupdate = "<form action ='updateprofileform.php' method='post'>" .
-                        "<input type='hidden' name='id' value='" . $p['id'] . "' />".
-                        "<input type='submit' class='btn btn-info btn-block' name='uprofile' value='UPDATE'/>".
-                        "</form>";
-                    echo $fupdate; ?>
                 </div>
+
+                <?php $fupdate = "<form action ='updateprofileform.php' method='post'>" .
+                    "<input type='hidden' name='id' value='" . $p['id'] . "' />".
+                    "<input type='submit' class='btn btn-info btn-block' name='uprofile' value='UPDATE'/>".
+                    "</form>";
+                echo $fupdate; ?>
             </div>
 
             <!--Wishlist-->
@@ -49,14 +49,16 @@ require_once "../Model/GordFeatures.php";
                     //This will print the current user's id
                     //If you need to do this for other people's profiles this will require other logic
                     ?>
-                    <a href="calendar_view.php" class='btn btn-info btn-block'>View Events</a>
                 </div>
+                <a href="calendar_view.php" class='btn btn-info btn-block'>View Events</a>
             </div>
 
 
             <!--search bar-->
             <div class="col-md-4">
-                <div><?php require_once 'searchForm.php'; ?></div>
+                <div class="searchFormBox">
+                    <?php require_once 'searchForm.php'; ?>
+                </div>
             </div>
 
             <div class="row viewFriend">

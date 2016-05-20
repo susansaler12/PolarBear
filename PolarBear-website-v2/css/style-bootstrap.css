@@ -47,6 +47,10 @@ img {
 ul{
     list-style: none;
 }
+/* zebra stripes for table */
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #eeeff2;
+}
  
 /*-------------------- header -----------------------*/
 #header {
@@ -173,28 +177,25 @@ ul{
     width: 100%;
     padding: 20px;
 }
-#main.homepage .columnBox {
+#main.showprofile .columnBox {
     display: block;
-    min-height: 250px;
+    height: 350px;
+    overflow: auto;
     position: relative;
     background-color: white;
 }
-#main.homepage .btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+#main.showprofile .columnBox h2 {
+    padding-bottom: 20px;
+    text-align: center;
 }
-#main.homepage h2 {
-     padding-bottom: 20px;
- }
 
-#main.homepage .row {
+#main.showprofile .row {
     background-color: #F1F1F1;
     padding: 30px 15px;
     border-radius: 10px;
 }
 
-#main.homepage .profileWrapper {
+#main.showprofile .profileWrapper {
     position: relative;
     top: 25px;
 }
@@ -209,6 +210,30 @@ ul{
     position: relative;
     width: 100%;
     margin-top: 10px;
+}
+/* Search Friends */
+#main .searchFormBox h2 {
+    padding: 20px;
+    text-align: center;
+}
+#main .searchFormBox .btn {
+    position: absolute;
+    bottom: 0;
+}
+#main .searchFormBox {
+    display: block;
+    height: 384px;
+    overflow: auto;
+    position: relative;
+    background-color: white;
+}
+#main .searchFormBox .searchInputBox {
+    padding: 0 20px;
+}
+#main .searchFormBox .searchResultBox {
+    padding: 0 20px;
+    height: 185px;
+    overflow: auto;
 }
 
 /* MESSAGEBOARD */
