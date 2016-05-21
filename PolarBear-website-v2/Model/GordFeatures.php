@@ -44,6 +44,11 @@ class GordFeatures{
         return $users;
     }
 
+    //get profile image pathname
+    public static function profileImagePath($filename){
+        return '../uploads/' . $filename;
+    }
+
     //call searchProfiles and print a table of results
     public static function printUserSearch($searchText){
         $users = self::searchProfiles($searchText);
@@ -60,10 +65,10 @@ class GordFeatures{
                     <tbody>
             ";
             foreach($users as $user){
-
+                $imagePath = self::profileImagePath($user->image);
                 $returnString .= "
                     <tr>
-                        <td><img src='$user->image' alt='Profile photo of $user->full_name'/></td>
+                        <td><img src='$imagePath' alt='Profile photo of $user->full_name'/></td>
                         <td>
                             <p><a href='../View/showfriendprofile.php?friendid=$user->id'>$user->full_name</a></p>
                             <p>$user->location</p>

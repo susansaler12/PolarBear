@@ -1,5 +1,8 @@
 <?php
 //listfriendrequest.php
+/*
+ THIS IS NOT NEEDED BECAUSE IT IS A PARTIAL VIEW. CAUSES ERRORS DUE TO MULTIPLE SESSION_START STATEMENTS.
+
 session_start();
 require_once "../Controller/session_start.php";
 $loggedIn = $_SESSION['loggedIn'];
@@ -10,6 +13,7 @@ if($loggedIn !== true){
 require_once "header.php";
 require_once "../Model/DB_connection.php";
 $db = DB_connection::getDB();
+*/
 
 
 $user = $_SESSION['id'];
@@ -63,7 +67,7 @@ else{
 }
 //on submit make make an isset so that friendlist will be updated where the id of the user and friender are
 
-require_once "footer.php";
+//require_once "footer.php"; THIS IS A PARTIAL VIEW AND DOES NOT NEED TO REQUIRE THE FOOTER AGAIN
 ?>
 
 
