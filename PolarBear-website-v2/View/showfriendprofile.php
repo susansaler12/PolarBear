@@ -22,8 +22,8 @@ require_once "../Model/GordFeatures.php";
 foreach($result as $p){
 
     echo "<div class='Pname'>" . $p['fname'] . " " . $p['lname'] . "</div>";
+    echo "<div class='Pimage'><img src='" . GordFeatures::profileImagePath($p['image']) . "'/></div>";
     echo "<div class='Pinterests'>" . "Interests:" ." " . $p['interests'] . "</div>";
-    echo "<div class='Pimage'>" . $p['image'] . "</div>";
     echo GordFeatures::printWishlist($friendid);
     //This will print the current user's id
     //If you need to do this for other people's profiles this will require other logic

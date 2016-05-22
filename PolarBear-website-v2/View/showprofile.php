@@ -27,9 +27,8 @@ require_once "../Model/GordFeatures.php";
                     <div class="profile">
                         <?php foreach($result as $p): ?>
                             <h2><?php echo $p['fname'] . " " . $p['lname'] ?> Profile</h2>
-                            <br/>
+                            <div><img src="<?php echo GordFeatures::profileImagePath($p['image']); ?>"/></div>
                             <div>Interests: <?php echo $p['interests'] ?></div>
-                            <div>Image: <?php echo $p['image'] ?></div>
                         <?php endforeach ?>
                     </div>
                 </div>
