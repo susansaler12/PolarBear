@@ -4,6 +4,9 @@ session_start();
 require_once "header.php";?>
 
 <main id="main" class="homepage">
+    <div id="mobileBanner" >
+        <img src="../images/mobileBanner.png" alt="Polar Bear Gifts"/>
+    </div>
     <!--CAROUSEL -->
     <div id="myCarousel" class="carousel slide container-fluid" data-ride="carousel">
         <!-- Indicators -->
@@ -17,15 +20,15 @@ require_once "header.php";?>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="../images/banner.png" />
-                 <div class="cGiousel-caption">
+                 <div class="carousel-caption" id="banner0">
                      <h2>Welcome to <span><br />Polar Bear Gift</span></h2>
                 </div>
             </div>
             <div class="item">
                 <img src='../images/banner1.png' />
-                <div class="cGiousel-caption" id="banner1">
+                <div class="carousel-caption" id="banner1">
                     <h2>Create a Profile and Connect with other Party Friends!</h2>
-                    <a href='../View/addprofileform.php'>Create a Profile</a></h3>
+                    <a href='../View/addprofileform.php'>Create a Profile</a>
 <!--                    <h3 class="btn-default">Create a Profile</h3>-->
                 </div>
             </div>
@@ -34,7 +37,7 @@ require_once "header.php";?>
             </div>
             <div class="item">
                 <img src="../images/banner3.png" />
-                <div class="cGiousel-caption" id="banner3">
+                <div class="carousel-caption" id="banner3">
                    <h2>Browse Through our Product Gallery</h2>
                     <a href='../Controller/productController.php'>Browse Gallery</a>
                 </div>
@@ -51,12 +54,12 @@ require_once "header.php";?>
         </a>
     </div>
     <!-- SEARCH BAR -->
-    <div class="container">
-        <form class="navbar-form row" role="search">
-            <div class="input-group add-on col-sm-12">
+    <div id="searchBar" class="container">
+        <form role="search">
+            <div class="input-group">
                 <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
                 <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit">search<!-- <i class="glyphicon glyphicon-search"></i> --></button>
+                    <button class="btn btn-primary" type="submit">search<!-- <i class="glyphicon glyphicon-search"></i> --></button>
                 </div>
             </div>
         </form>

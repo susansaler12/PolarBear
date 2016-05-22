@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col-sm-4 col-xs-12">
                 <!-- Polar Bear logo -->
-                <a class="navbar-brand" href="/" ><img id="logo" src="../images/logo.png" alt="Polar Bear Logo"/></a>
+                <a class="navbar-brand" href="../View/index1.php" ><img id="logo" src="../images/logo.png" alt="Polar Bear Logo"/></a>
             </div>
             <div id="mainNav" class="col-sm-8 col-xs-12">
                 <!-- Main navigation -->

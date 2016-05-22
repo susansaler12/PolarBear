@@ -1,43 +1,47 @@
-<hr/>
 <footer id="footer">
+    <hr/>
     <div class="footer-panel">
         <div class="container">
             <div class="panel-body row">
-                <ul class="col-sm-20 col-xs-12">
-                    <li><h2>Company Info</h2></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Privacy Statement</a></li>
-                    <li><a href="#">careers</a></li>
-                </ul>
-                <ul class="col-sm-20 col-xs-12">
-                    <li><h2>For Members</h2></li>
-                    <li><a href="#">My Customer Care</a></li>
-                    <li><a href="#">Mobile Apps</a></li>
-                    <li><a href="#">Wedding Resources</a></li>
-                    <li><a href="#">Baby Vendors</a></li>
-                </ul>
-                <ul class="col-sm-20 col-xs-12">
-                    <li><h2>For Guests</h2></li>
-                    <li><a href="#">Members Directory</a></li>
-                    <li><a href="#">Find Somebody's Registry</a></li>
-                </ul>
-                <ul class="col-sm-20 col-xs-12">
-                    <li><h2>NonProfits/ Organizations</h2></li>
-                    <li><a href="#">Fundraising</a></li>
-                    <li><a href="#">Cash Gift Services</a></li>
-                    <li><a href="#">Pre-Screened Retailers</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
-                <ul class="col-sm-20 col-xs-12">
-                    <li><h2>For Merchants</h2></li>
-                    <li><a href="#">Gift Registry Software</a></li>
-                    <li><a href="#">Fundraising</a></li>
-                    <li><a href="#">Merchant Log in</a></li>
-                    <li><a href="#">Advertising with Us</a></li>
-                </ul>
+                <div class="col-sm-7 col-xs-12">
+                    <ul class="col-xs-4">
+                        <li><h2>Company Info</h2></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Statement</a></li>
+                        <li><a href="#">careers</a></li>
+                    </ul>
+                    <ul class="col-xs-4">
+                        <li><h2>For Members</h2></li>
+                        <li><a href="#">My Customer Care</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Wedding Resources</a></li>
+                        <li><a href="#">Baby Vendors</a></li>
+                    </ul>
+                    <ul class="col-xs-4">
+                        <li><h2>For Guests</h2></li>
+                        <li><a href="#">Members Directory</a></li>
+                        <li><a href="#">Find Somebody's Registry</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <ul class="col-sm-6 col-xs-4">
+                        <li><h2>NonProfits/ Organizations</h2></li>
+                        <li><a href="#">Fundraising</a></li>
+                        <li><a href="#">Cash Gift Services</a></li>
+                        <li><a href="#">Pre-Screened Retailers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                    <ul class="col-sm-6 col-xs-4">
+                        <li><h2>For Merchants</h2></li>
+                        <li><a href="#">Gift Registry Software</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                        <li><a href="#">Merchant Log in</a></li>
+                        <li><a href="#">Advertising with Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="icons">
