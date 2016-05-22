@@ -58,9 +58,9 @@ class GordFeatures{
             $returnString = "
                 <table class='table table-striped'>
                     <thead>
-                        <th>Profile Photo</th>
+                        <th>Photo</th>
                         <th>User Info</th>
-                        <th>Invite Friend</th>
+                        <th>Friend</th>
                     </thead>
                     <tbody>
             ";
