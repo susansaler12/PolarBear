@@ -68,7 +68,12 @@ class GordFeatures{
                 $imagePath = self::profileImagePath($user->image);
                 $returnString .= "
                     <tr>
-                        <td><img src='$imagePath' alt='Profile photo of $user->full_name'/></td>
+                        <td>
+                            <div class='searchProfileImg'>
+                                <img src='$imagePath' alt='Profile photo of $user->full_name'/>
+                            </div>
+                        </td>
+
                         <td>
                             <p><a href='../View/showfriendprofile.php?friendid=$user->id'>$user->full_name</a></p>
                             <p>$user->location</p>

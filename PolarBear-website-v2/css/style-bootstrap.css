@@ -175,9 +175,6 @@ ul{
 	width: 100%;
 }
 /* MAIN PAGE */
-/*#main {
-    min-height: 400px;
-}*/
 
 /* PROFILE */
 .columnBox {
@@ -185,63 +182,75 @@ ul{
     width: 100%;
     padding: 20px;
 }
-#main.showprofile .columnBox {
+#showprofile .columnBox {
     display: block;
     height: 350px;
     overflow: auto;
     position: relative;
     background-color: white;
 }
-#main.showprofile .columnBox h2 {
+#showprofile .columnBox h2 {
     padding-bottom: 20px;
     text-align: center;
 }
 
-#main.showprofile .row {
+#showprofile .row {
     background-color: #F1F1F1;
     padding: 30px 15px;
     border-radius: 10px;
 }
 
-#main.showprofile .profileWrapper {
+#showprofile .profileWrapper {
     position: relative;
     top: 25px;
 }
 
-#main .profile {
+#showprofile .profile {
     padding-bottom: 10px;
 }
-#main .viewFriend {
+#showprofile .profileImg {
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+}
+#showprofile .viewFriend {
     padding: 0 30px !important;
 }
-#main .viewFriend .btn {
+#showprofile .viewFriend .btn {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 /* Search Friends */
-#main .searchFormBox h2 {
+#showprofile .searchFormBox h2 {
     padding: 20px;
     text-align: center;
 }
-#main .searchFormBox .btn {
+#showprofile .searchFormBox .btn {
     position: absolute;
     bottom: 0;
 }
-#main .searchFormBox {
+#showprofile .searchFormBox {
     display: block;
     height: 384px;
     overflow: auto;
     position: relative;
     background-color: white;
 }
-#main .searchFormBox .searchInputBox {
+#showprofile .searchFormBox .searchInputBox {
     padding: 0 20px;
 }
-#main .searchFormBox .searchResultBox {
+#showprofile .searchFormBox .searchResultBox {
     padding: 0 20px;
     height: 185px;
     overflow: auto;
+}
+#showprofile .searchProfileImg {
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 /* MESSAGEBOARD */
@@ -263,6 +272,7 @@ ul{
 /*-----------------------FOOTER-----------------------*/
 #footer {
     margin-top: 3em;
+    font-size: 12px;
 }
 #footer ul{
     list-style: none;

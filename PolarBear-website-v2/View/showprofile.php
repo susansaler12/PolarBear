@@ -19,7 +19,7 @@ require_once "../Model/GordFeatures.php";
 
 ?>
 
-    <main id="main" class="container showprofile">
+    <main id="showprofile" class="container">
         <div class="row profileWrapper">
             <!--User profile-->
             <div class="col-md-4">
@@ -27,7 +27,7 @@ require_once "../Model/GordFeatures.php";
                     <div class="profile">
                         <?php foreach($result as $p): ?>
                             <h2><?php echo $p['fname'] . " " . $p['lname'] ?> Profile</h2>
-                            <div><img src="<?php echo GordFeatures::profileImagePath($p['image']); ?>"/></div>
+                            <div class="profileImg"><img src="<?php echo GordFeatures::profileImagePath($p['image']); ?>"/></div>
                             <div>Interests: <?php echo $p['interests'] ?></div>
                         <?php endforeach ?>
                     </div>
