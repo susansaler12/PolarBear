@@ -29,7 +29,7 @@ require_once '../View/productsSidebar.php';
 
     <div class="col-md-6">
         <h2><?php echo $product->getName()?></h2>
-        <form action="wishlist.php" method="post">
+        <form action="../Controller/wishlist.php" method="post">
             <input type="hidden" value="<?php /*echo $product->getProduct_ID(); */?>" name="product_id"/>
             <!--<input type="hidden" value="--><?php /*//echo $_SESSION['user_id']; */?><!--" name="user_id"/>-->
             <input type="hidden" value="<?php /*$product['name'];*/?>" name="name"/>

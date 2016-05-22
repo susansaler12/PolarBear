@@ -1,4 +1,5 @@
 <?php
+require_once 'DB_connection.php';
  class wishlistDB
  {
      public static function getWishlist($product_id,$name)

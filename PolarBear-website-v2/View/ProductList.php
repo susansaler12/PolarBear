@@ -40,10 +40,10 @@ require_once '../View/header.php';
                                 echo "<p>$" . $category->getPrice() . "</p>";
                             ?>
                             <span>Avg. Rating: <?php echo GordFeatures::getAvgRating($category->getProduct_ID());?></span>
-                            <form action="wishlist.php" method="post">
+                            <form action="../Controller/wishlist.php" method="post">
                                 <input type="hidden" value="<?php echo $category->getProduct_ID(); ?>" name="product_id"/>
                                 <!--<input type="hidden" value="<?php //echo $_SESSION['user_id']; */?><!--" name="user_id"/>-->
-                                <input type="hidden" value="<?php /*$category->getName();*/?>" name="name"/>
+                                <input type="hidden" value="<?php echo $category->getName();?>" name="name"/>
                                 <input type="submit" name= "finished" value="Add to Wishlist" class="btn btn-info btn-block"/>
                             </form>
                         </div>
@@ -61,8 +61,9 @@ require_once '../View/header.php';
                                 echo "<p>$" . $brand->getPrice() . "</p>";
                             ?>
                             <span>Avg. Rating: <?php echo GordFeatures::getAvgRating($brand->getProduct_ID());?></span>
-                            <form action="wishlist.php" method="post">
+                            <form action="../Controller/wishlist.php" method="post">
                                 <input type="hidden" value="<?php echo $brand->getProduct_ID(); ?>" name="product_id"/>
+                                <input type="hidden" value="<?php echo $brand->getName();?>" name="name"/>
                                 <input type="submit" name= "finished" value="Add to Wishlist" class="btn btn-info btn-block"/>
                             </form>
                         </div>
@@ -80,10 +81,10 @@ require_once '../View/header.php';
                                 echo "<p>$" . $product->getPrice() . "</p>";
                             ?>
                             <span>Avg. Rating: <?php echo GordFeatures::getAvgRating($product->getProduct_ID());?></span>
-                            <form action="wishlist.php" method="post">
-                                <input type="hidden" value="<?php /*echo $product->getProduct_ID(); */?>" name="product_id"/>
+                            <form action="../Controller/wishlist.php" method="post">
+                                <input type="hidden" value="<?php echo $product->getProduct_ID(); ?>" name="product_id"/>
                                 <!--<input type="hidden" value="--><?php /*//echo $_SESSION['user_id']; */?><!--" name="user_id"/>-->
-                                <input type="hidden" value="<?php /*$product['name'];*/?>" name="name"/>
+                                <input type="hidden" value="<?php echo $product->getName();?>" name="name"/>
                                 <input type="submit" name= "finished" value="Add to Wishlist" class="btn btn-info btn-block"/>
                             </form>
                         </div>
