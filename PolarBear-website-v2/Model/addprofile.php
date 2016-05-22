@@ -127,7 +127,7 @@ try {
     echo 'Caught exception: ', $e->getMessage(), "\n";
 }
 //This is the folder where the images will be saved
-$target_path = "../uploads/";
+$target_path = "../images/uploads/";
 $target_path = $target_path .  $_FILES['fimg']['name'];
 $image = $_FILES['fimg']['name'];
 //move the uploaded file from tempe path to taget path

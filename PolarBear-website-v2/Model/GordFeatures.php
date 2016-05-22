@@ -46,7 +46,7 @@ class GordFeatures{
 
     //get profile image pathname
     public static function profileImagePath($filename){
-        return '../uploads/' . $filename;
+        return '../images/uploads/' . $filename;
     }
 
     //call searchProfiles and print a table of results
