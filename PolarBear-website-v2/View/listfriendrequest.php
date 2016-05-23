@@ -1,7 +1,9 @@
 <?php
 //listfriendrequest.php
-/*
- THIS IS NOT NEEDED BECAUSE IT IS A PARTIAL VIEW. CAUSES ERRORS DUE TO MULTIPLE SESSION_START STATEMENTS.
+
+ //session information is required in order to get the user session id for the sql queries
+// if you take this out EVERYTHING will break
+//this is a separate view from the profile page and not a partial view
 
 session_start();
 require_once "../Controller/session_start.php";
@@ -13,7 +15,7 @@ if($loggedIn !== true){
 require_once "header.php";
 require_once "../Model/DB_connection.php";
 $db = DB_connection::getDB();
-*/
+
 
 
 $user = $_SESSION['id'];
