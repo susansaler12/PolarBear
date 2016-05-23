@@ -211,7 +211,7 @@ class GordFeatures{
         $result = $preparedQuery->fetch();
         $resultFormat = number_format($result->average,1);
         if($resultFormat === '0.0'){
-            return "No reviews";
+            return "--";
         }
         return $resultFormat;
     }
@@ -250,16 +250,14 @@ class GordFeatures{
         $reviews = self::getReviews($productId);
         $resultString = '';
         if(count($reviews) === 0){
-            $resultString .= "<p>This product has not yet been reviewed.</p>";
+            $resultString .= "<small>This product has not yet been reviewed.</small>";
         }else{
             foreach($reviews as $review){
                 $username = self::getName($review->user_id);
                 $resultString .= "
                     <article>
-                        <h3>User: $username</h3>
-                        <p>Posted: $review->post_date</p>
-                        <p>Score: $review->rating</p>
-                        <p><b>Comments: </b>$review->description</p>
+                        <p><small><b>$username</b>: $review->description<br/>
+                            $review->post_date | Score: $review->rating</small></p>
                     </article>
                 ";
             }

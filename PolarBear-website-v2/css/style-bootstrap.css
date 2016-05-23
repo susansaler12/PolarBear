@@ -275,20 +275,40 @@ ul{
 #gallery {
     padding-top: 3%;
 }
-#gallery .col-md-3 {
+#gallery article {
+     border-top: 1px solid #eee;
+     padding: 2% 0 5% 8%;
+ }
+#gallery .details {
+    padding: 2% 10% 5% 10%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+#gallery .details form {
+    padding-top: 8%;
+}
+#gallery .thumbnails {
     padding: 3%;
     border: 1px solid lightgrey;
     margin: 1%;
     border-radius: 10px;
 }
-#gallery .col-md-3 form {
+#gallery .thumbnails form {
     padding-top: 5%;
+}
+#gallery h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 /* image holder */
 .productimg {
     max-width: 200px;
     height: 180px;
     overflow: hidden;
+    margin: 0 auto;
+}
+.productDetailsImg {
+    max-width: 500px;
     margin: 0 auto;
 }
 .container .col-md-6 h2{
@@ -386,6 +406,11 @@ ul{
     /* turn off carousel */
     #myCarousel {
         display: none;
+    }
+
+    /* product detail image*/
+    #gallery img {
+        margin: 10%;
     }
 }
 
