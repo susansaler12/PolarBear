@@ -38,13 +38,15 @@ $result = $db->query($listrequest);
 $result->execute();
 
 //forms with buttons for confrim or deny friend
+    echo "<div class='container'><div class='row'><h1>Friend Requests</h1>";
+
 foreach($result as $r) {
-    echo "<div>" . $r['fname'] . " " . $r['lname'] . "</div>";
-
-    echo "<form method='post'> <input type='submit' value='Confirm Friend' name='confirmfriend'/> </form>";
-
-    echo "<form method='post'> <input type='submit' value='Deny Friend' name='denyfriend'/> </form>";
+    echo "<div style='display:inline-block;margin:20px;'><h4>" . $r['fname'] . " " . $r['lname'] . "</h4>";
+    echo "<form method='post'> <input type='submit' value='Confirm Friend' name='confirmfriend' class=\"btn btn-info btn-block\"/> </form>";
+    echo "<form method='post'> <input type='submit' value='Deny Friend' name='denyfriend' class=\"btn btn-info btn-block\" style='margin-top:5px;'/> </form></div>";
 }
+
+    echo "</div></div>";
 //if the user clicks the confirm friend button then the status should be set to 1
 if (isset ($_POST['confirmfriend']) && $_POST['confirmfriend'] == 'Confirm Friend') {
     $confirmed = "UPDATE friendlist
@@ -69,7 +71,7 @@ else{
 }
 //on submit make make an isset so that friendlist will be updated where the id of the user and friender are
 
-//require_once "footer.php"; THIS IS A PARTIAL VIEW AND DOES NOT NEED TO REQUIRE THE FOOTER AGAIN
+require_once "footer.php";
 ?>
 
 
