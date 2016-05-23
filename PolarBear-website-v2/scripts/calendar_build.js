@@ -80,11 +80,19 @@ function buildCalendar(eventData) {
 
     function newEventPrompt(date, jsEvent, View) {
         $('#dark_background').show();
-        var detDisplay = $('#event_details_display');
-        detDisplay.show();
-        detDisplay.css({
-            'margin-left': -detDisplay.width(),
-            'margin-top': -(detDisplay.height() / 2 + 50)
+
+        $('#event_details_name').html('');
+        $('#event_details_date').html('');
+        $('#event_details_descrip').html('');
+        $('#event_details_location').html('');
+        $('#event_details_goh').html('');
+        $('#surprise_party').html('');
+
+        var $detDisplay = $('#event_details_display');
+        $detDisplay.show();
+        $detDisplay.css({
+            'left': ($(window).width() / 2 - ($detDisplay.width() / 2)),
+            'top': ($(window).height() / 2 - ($detDisplay.height() / 2))
         });
         $('#dark_background').click(function (e) {
             if ($(e.target).is('#dark_background')) {
