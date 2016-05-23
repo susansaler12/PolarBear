@@ -5,8 +5,8 @@
 // if you take this out EVERYTHING will break
 //this is a separate view from the profile page and not a partial view
 
-session_start();
 require_once "../Controller/session_start.php";
+
 $loggedIn = $_SESSION['loggedIn'];
 if($loggedIn !== true){
     header("Location:login.php");

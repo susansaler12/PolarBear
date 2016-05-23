@@ -1,5 +1,6 @@
 <?php
-session_start();
+require_once "../Controller/session_start.php";
+
 $loggedIn = $_SESSION['loggedIn'];
 if($loggedIn !== true){
     header("Location:login.php");
@@ -21,13 +22,23 @@ require_once "header.php";
 require_once "../Model/GordFeatures.php";
 foreach($result as $p){
 
-    echo "<div class='Pname'>" . $p['fname'] . " " . $p['lname'] . "</div>";
-    echo "<div class='Pimage'><img src='" . GordFeatures::profileImagePath($p['image']) . "'/></div>";
-    echo "<div class='Pinterests'>" . "Interests:" ." " . $p['interests'] . "</div>";
+    echo "<main id='showprofile' class='container friendProfile'>";
+    echo "    <div class='row'>";
+    echo "        <div class='col-sm-4 col-sm-offset-1 text-center'>";
+    echo "            <div class='friendProfileImg Pimage'><img src='" . GordFeatures::profileImagePath($p['image']) . "'/></div>";
+    echo "            <h1 class='Pname'>" . $p['fname'] . " " . $p['lname'] . "</h1>";
+    echo "            <div class='Pinterests'>" . "Interests:" ." " . $p['interests'] . "</div>";
+    echo "        </div>";
+    echo "        <div class='col-sm-6'>";
     echo GordFeatures::printWishlist($friendid);
     //This will print the current user's id
     //If you need to do this for other people's profiles this will require other logic
+    echo "        </div>";
+    echo "    </div>";
+    echo "</main>";
+
 }
-include "listfriendrequest.php";
+/* This is show friend profile, shouldn't show friend request
+ * include "listfriendrequest.php"; */
 require_once "footer.php";
 ?>

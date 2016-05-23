@@ -1,6 +1,6 @@
-#calendar{
+/*#calendar{
     margin:25px;
-}
+}*/
 #dark_background{
     position: fixed;
     display: none;
@@ -9,7 +9,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 98;
+    z-index: 300;
 }
 #event_details_display{
     position: fixed;
