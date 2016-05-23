@@ -30,11 +30,10 @@ else{
     $head1 = "Create a new Event";
     $buttonText = "Create Event";
 }
-
 ?>
 <main id="main" class="container-fluid">
     <div class="row">
-        <form action="../Controller/update_event.php<?php if($isUpdate){echo '?event_id=' . $event_id;}?>" method="post" name="event_details_form" id="event_details_form" class="col-xs-10 col-md-8 col-lg-6 col-xs-offset-1 col-md-offset-2 col-lg-offset-3">
+        <form action="../Controller/update_event.php<?php if($isUpdate){echo '?event_id=' . $event_id;}?>" method="post" name="event_details_form" id="event_details_form" class="col-xs-10 col-md-6 col-lg-6 col-xs-offset-1 col-md-offset-3 col-lg-offset-3">
             <h1 style="margin-bottom:25px;"><?php echo $head1 ?></h1>
             <div class="form-group">
                 <label for="event_name" >Event Name: </label>
@@ -69,11 +68,9 @@ else{
                 <input type="submit" class="btn btn-info btn-block" id="btnSubmit" name="finished_form" <?php echo "value='$buttonText'"?> />
             </div>
             <hr/>
-        </form>
-        <hr/><br/>
-        <div class="col-xs-2 col-xs-offset-2">
             <a href="calendar_view.php">Back to Calendar</a>
-        </div>
+        </form>
+        <br/>
     </div>
 </main>
 <?php require_once "footer.php"?>
