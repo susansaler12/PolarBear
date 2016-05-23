@@ -30,7 +30,7 @@ require_once "../Model/GordFeatures.php";
                 if(isset($_GET['message'])){
                     echo $_GET['message'];
                 }
-                elseif(invites::checkConfirmed((int)$id, (int)$event_id)[0] != null){
+                elseif(invites::checkConfirmed((int)$id, (int)$event_id) !== []){
                     echo "<h2>Your Invite is Unconfirmed!</h2> <a href='../Controller/confirm_invite.php?event_id=$event_id'>CONFIRM</a> | <a href='../Controller/decline_invite.php?event_id=$event_id'>DECLINE</a>";
                 }
                 ?></p>

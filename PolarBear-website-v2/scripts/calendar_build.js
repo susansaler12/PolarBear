@@ -43,12 +43,13 @@ function buildCalendar(eventData) {
     }
 
     function eventDetails(event, element) {
+        showDetails(event);
         $('#dark_background').show();
-        var detDisplay = $('#event_details_display');
-        detDisplay.show();
-        detDisplay.css({
-            'margin-left': -detDisplay.width() / 2,
-            'margin-top': -(detDisplay.height() / 2 + 50)
+        var $detDisplay = $('#event_details_display');
+        $detDisplay.show();
+        $detDisplay.css({
+            'left': ($(window).width() / 2 - ($detDisplay.width() / 2)),
+            'top': ($(window).height() / 2 - ($detDisplay.height() / 2))
         });
         $('#dark_background').click(function (e) {
             if ($(e.target).is('#dark_background')) {
@@ -56,7 +57,6 @@ function buildCalendar(eventData) {
                 $('#event_details_display').hide();
             }
         });
-        showDetails(event);
     }
 
     function showDetails(eventIn) {
