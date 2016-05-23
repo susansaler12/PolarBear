@@ -19,26 +19,28 @@ $message = $results->fetch();
 ?>
 <?php include 'header.php' ?>
 <main id="main" class="container">
-    <form action="../Controller/updateMessage.php" method="post" class="col-md-6 col-md-offset-3">
-        <h1>Message Board</h1>
-        <input type="hidden" name="msg_id" value="<?php echo $msg_id; ?>" />
-        <div class="form-group">
-            <label>Event:</label>
-            <input disabled class="form-control" type="input" name="event_name" value="<?php echo $message['event_name']; ?>" />
-        </div>
-        <div class="form-group">
-            <label>Subject: </label>
-            <input class="form-control" type="input" name="subject" value="<?php echo $message['subject']; ?>" />
-        </div>
-        <div class="form-group">
-            <label>Content: </label>
-            <textarea class="messageBox form-control" name="content" rows="4" cols="50" ><?php echo $message['content']; ?></textarea>
-        </div>
-        <div class="form-group">
-            <input class="btn btn-info btn-block" type="submit" value="Post Message" />
-            <a href="messageIndex.php" class="btn btn-default btn-block">Cancel</a>
-        </div>
-    </form>
+    <div class="row">
+        <form action="../Controller/updateMessage.php" method="post" class="col-md-6 col-md-offset-3">
+            <h1>Message Board</h1>
+            <input type="hidden" name="msg_id" value="<?php echo $msg_id; ?>" />
+            <div class="form-group">
+                <label>Event:</label>
+                <input disabled class="form-control" type="input" name="event_name" value="<?php echo $message['event_name']; ?>" />
+            </div>
+            <div class="form-group">
+                <label>Subject: </label>
+                <input class="form-control" type="input" name="subject" value="<?php echo $message['subject']; ?>" />
+            </div>
+            <div class="form-group">
+                <label>Content: </label>
+                <textarea class="messageBox form-control" name="content" rows="4" cols="50" ><?php echo $message['content']; ?></textarea>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-info btn-block" type="submit" value="Post Message" />
+                <a href="messageIndex.php" class="btn btn-default btn-block">Cancel</a>
+            </div>
+        </form>
+    </div>
 </main>
 <?php include 'footer.php' ?>
 

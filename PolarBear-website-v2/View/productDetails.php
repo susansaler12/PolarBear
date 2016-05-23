@@ -55,8 +55,8 @@ require_once '../View/header.php';
                         <div class="details">
                             <h1><?php echo $product->getName()?></h1>
                             <h3>$<?php echo $product->getPrice()?></h3>
-                            <p>Category: <?php echo $product->getCategory()?></p>
-                            <p>Description: <?php echo $product->getDescription()?></p>
+                            <p><?php echo $product->getCategory()?></p>
+                            <p><?php echo $product->getDescription()?></p>
                             <form action="../Controller/wishlist.php" method="post">
                                 <input type="hidden" value="<?php /*echo $product->getProduct_ID(); */?>" name="product_id"/>
                                 <!--<input type="hidden" value="--><?php /*//echo $_SESSION['user_id']; */?><!--" name="user_id"/>-->
