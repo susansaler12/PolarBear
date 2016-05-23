@@ -63,6 +63,7 @@ require_once '../View/header.php';
                                 <input type="hidden" value="<?php /*$product['name'];*/?>" name="name"/>
                                 <input type="submit" name= "finished" value="Add to Wishlist" class="btn btn-info btn-block" id="wbtn"/>
                             </form>
+                            <?php echo "<a class='btn btn-default btn-block' href='javascript:history.go(-1)'>Back to product page</a>"; ?>
                         </div>
                         <div class="row">
                             <div class='col-md-11'>

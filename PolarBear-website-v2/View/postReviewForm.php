@@ -79,6 +79,7 @@ require_once '../View/header.php';
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" id="reviewSubmit" name="reviewSubmit" value="Submit Review" class="btn btn-info btn-block"/>
+                                        <?php echo "<a class='btn btn-default btn-block' href='javascript:history.go(-1)'>Cancel</a>"; ?>
                                     </div>
                                 </form>
                             </div>
