@@ -11,6 +11,9 @@ body {
 .container, .container-fluid {
 	padding: 0;
 }
+.container-fluid >.row {
+    margin: 0;
+}
 .hidden {
     left: -10000px;
     line-height:0;
